@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { FrontPageComponent } from './front-page/front-page.component';
-import { SkillsSetComponent } from './skills-set/skills-set.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './0_header/header.component';
+import { AboutMeComponent } from './2_about-me/about-me.component';
+import { FrontPageComponent } from './1_front-page/front-page.component';
+import { SkillsSetComponent } from './3_skills-set/skills-set.component';
+import { PortfolioComponent } from './4_portfolio/portfolio.component';
+import { ContactComponent } from './5_contact/contact.component';
+import { FooterComponent } from './6_footer/footer.component';
 
 @NgModule({
   declarations: [
