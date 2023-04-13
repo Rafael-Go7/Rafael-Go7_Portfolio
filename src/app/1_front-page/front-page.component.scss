@@ -1,0 +1,35 @@
+.frontBoxMajor{
+    background-color: #FFFFFF;
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    z-index: 0;
+
+    img {
+        // position: relative;
+        // top: 0;
+    }
+
+}
+
+.welcome{
+    margin-top: 200px;
+    margin-left: 100px;
+
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 64px;
+        color: #5988FF;
+        margin: 0;
+    }
+    
+    font-family: 'Baloo Bhai Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 128px;
+    line-height: 80%;
+    color:#5988FF;
+}

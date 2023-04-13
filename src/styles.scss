@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Baloo Bhai Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/fonts/Baloo-Bhai-Regular/baloobhai/BalooBhai-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}

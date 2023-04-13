@@ -1,0 +1,40 @@
+header {
+    height: 100px;
+    min-width: 80vw;
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+
+
+    a{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        margin-left: 30px;
+        color: #5988FF;
+        
+        &:hover{
+            font-style: bol
+        }    
+    }
+
+    
+
+    img {
+        height: 50px;
+    }
+}
+
+.navMenu{
+    display: flex;
+
+}
