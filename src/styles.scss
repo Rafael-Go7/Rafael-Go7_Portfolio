@@ -13,6 +13,13 @@
     src: url('../src/assets/fonts/Baloo-Bhai-Regular/baloobhai/BalooBhai-Regular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url('../src/assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
 }
