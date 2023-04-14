@@ -1,1 +1,6 @@
 <p>portfolio works!</p>
+<div class="skill" *ngFor="let skill of skills_row1; let i = index;">
+    
+    <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
+    <div class="skillDescription">{{skill.skillDescription}}</div>
+</div>

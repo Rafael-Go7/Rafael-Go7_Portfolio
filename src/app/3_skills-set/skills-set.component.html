@@ -1,8 +1,23 @@
 <div class="skillsSetMajor">
 
-    <p>skills-set works!</p>
-
-    <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{icons_IMG[logo_index]}}">
+    <p>Skills Set</p>
+    <div class="skillsSet">
+        <div class="skillsRow">
+            <div class="skill" *ngFor="let skill of skills_row1; let i = index;">
+    
+                    <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
+                    <div class="skillDescription">{{skill.skillDescription}}</div>
+            </div>
+         </div>
+         <div class="skillsRow">
+            <div class="skill" *ngFor="let skill of skills_row2; let i = index;">
+    
+                <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
+                <div class="skillDescription">{{skill.skillDescription}}</div>
+            </div>
+        </div>
+    </div>
+    <!-- <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{icons_IMG[logo_index]}}"> -->
 
 </div>
 
