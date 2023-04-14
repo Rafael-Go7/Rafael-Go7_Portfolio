@@ -1,14 +1,18 @@
 .frontBoxMajor{
+    height: calc(100vh - 17px);
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
     background-color: #FFFFFF;
     display: flex;
+    justify-content: space-between;
 
     position: absolute;
     top: 0;
     z-index: 0;
 
     img {
-        // position: relative;
-        // top: 0;
+        height:800px;
     }
 
 }
@@ -32,4 +36,75 @@
     font-size: 128px;
     line-height: 80%;
     color:#5988FF;
+}
+
+.welcomePhoto{
+    position: absolute;
+    bottom: 0;
+
+    z-index: 3;
+    img {
+        height: 1000px;
+        width: 100%;
+        // width: 892px;
+        margin-left: 8%;
+    }
+}
+
+.bubbleMid {
+    position: relative;
+    bottom: -40px;
+    z-index: 3;
+
+    img {
+        height: 210px;
+    }
+}
+
+.rightBottomCorner{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+}
+
+.scroll{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 23px;
+        color: #5988FF;
+    }
+
+    img {
+        height: 330px;
+        width: 5px;
+    }
+}
+
+.digitalLinks{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-bottom: 60px;
+    // position: absolute;
+    // bottom: 0;
+
+    a{
+        &:hover{
+               margin-right:10px;
+        }
+    }
+
+    img{
+        height: 40px;
+        margin-top: 25px;
+    }
 }
