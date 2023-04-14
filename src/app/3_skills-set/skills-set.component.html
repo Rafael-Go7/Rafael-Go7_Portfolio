@@ -2,20 +2,24 @@
 
     <p>Skills Set</p>
     <div class="skillsSet">
-        <div class="skillsRow">
-            <div class="skill" *ngFor="let skill of skills_row1; let i = index;">
-    
+            <div class="skillsRow_1">
+                <div class="skill" *ngFor="let skill of skills_row1; let i = index;">
+        
+                        <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
+                        <div>
+                            <div class="skillDescription">{{skill.skillDescription}}</div>
+                        </div>
+                </div>
+            </div>
+            <!-- <div class="skillsRow_2">
+                <div class="skill" *ngFor="let skill of skills_row2; let i = index;">
+        
                     <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
-                    <div class="skillDescription">{{skill.skillDescription}}</div>
-            </div>
-         </div>
-         <div class="skillsRow">
-            <div class="skill" *ngFor="let skill of skills_row2; let i = index;">
-    
-                <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
-                <div class="skillDescription">{{skill.skillDescription}}</div>
-            </div>
-        </div>
+                    <div>
+                        <div class="skillDescription">{{skill.skillDescription}}</div>
+                    </div>
+                </div>
+            </div> -->
     </div>
     <!-- <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{icons_IMG[logo_index]}}"> -->
 
