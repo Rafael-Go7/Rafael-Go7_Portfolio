@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 275.97 263.45">
+ <rect transform="matrix(.22265 0 0 .22265 -93.448 78.415)" x="423.43" y="-350.69" width="1234.3" height="808.57" rx="40" ry="40" stroke="#e6e6e6" stroke-width="3"/>
+ <path d="m0 82.27v-73.741c0-4.1145 3.972-7.4269 8.9059-7.4269h257c4.934 0 8.906 3.3124 8.906 7.4269v73.741h-274.81z" fill="#7f7f7f" opacity=".25"/>
+ <g stroke="#fff">
+  <rect transform="matrix(.23514 0 0 .23514 -106.5 77.836)" x="486.83" y="-291.12" width="1108" height="658.13" fill="#5f8dd3" stroke-width=".855"/>
+  <text transform="matrix(.41828 0 0 .41828 62.4 95.98)" x="179.867148" y="191.188611" fill="#fff" font-family="Impact" font-size="24" stroke-width="0" text-anchor="middle">S A M S U L</text>
+ </g>
+</svg>

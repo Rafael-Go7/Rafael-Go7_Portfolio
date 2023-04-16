@@ -1,25 +1,17 @@
 .aboutMeMajor{
-    height:60vh;
+    min-height:60vh;        // height vs. min-height?
     max-width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-bottom: 50px;
     background-color: white;
-
-    a{
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 23px;
-        line-height: 120%;
-        color:#5988FF;
-        text-decoration: none;
-    }
 }
 
 .workTogether {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 50px;
 }
 
 .letsWork{
@@ -40,6 +32,33 @@
         font-size: 23px;
         line-height: 120%;
         color: black;
+    }
+
+    a{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 23px;
+        line-height: 120%;
+        color:#5988FF;
+
+        // position: relative;
+        width: 254px;
+        height: 58px;
+        left: 932px;
+        top: 1472px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        gap: 10px;
+
+        text-decoration: none;
+        border: 2px solid #5988FF;
+        border-radius: 10px;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
     }
 }
 
