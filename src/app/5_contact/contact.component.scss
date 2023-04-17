@@ -1,0 +1,52 @@
+.ContactMajor{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Baloo Bhai Regular';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    line-height: 100%;
+    color:#5988FF;
+
+
+}
+
+.problemToSolve{
+    max-width: 45%;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    color: #5988FF;
+
+    p{
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: rgba(0, 0, 0, 1);
+       
+    }
+
+    span{
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        color: #000000;
+        color: #5988FF;
+    }
+}
+
+.forms{
+    min-width: 55%;
+}
