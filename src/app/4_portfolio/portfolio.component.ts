@@ -6,21 +6,33 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit{
-  skills_row1 = [{'img':'logo_1_Angular_white.svg',
-                  'skillDescription':'Angular'
-                },
-                {'img':'logo_2_Typescript_white.svg',
-                'skillDescription':'Typescript'
-                },
-                {'img':'logo_3_JavaScript_white.svg',
-                'skillDescription':'Javascript'
-                },
-                {'img':'logo_4_Html_white.svg',
-                  'skillDescription':'HTML'
-                },
-                {'img':'logo_5_Scrum_white.svg',
-                  'skillDescription':'Scrum'
-                }];
+  
+// Projects = [{'title': 'JOIN',
+//                   // 'projectSkills': [{'Angular | ', 'Typescript | ' , 'HTML | ', 'CSS | ', 'Firebase | '}],
+//                   'img':'join.svg',
+//                   'description':'Angular'
+//                 },
+//                 {'title': 'El-Pollo Loco',
+//                   'projectSkills': '',
+//                   'img':'epl.svg',
+//                   'description':'Typescript'
+//                 },
+//                 {'title': 'Simple CRM',
+//                   'projectSkills': '',
+//                   'img':'simpleCRM.svg',
+//                   'description':'Javascript'
+//                 },
+//                 {'title': 'Pokédex',
+//                   'projectSkills': '',
+//                   'img':'pokedex.svg',
+//                   'description':'HTML'
+//                 },
+//                 {'title': 'Crypto Converter',
+//                   'projectSkills': '',
+//                   'img':'cryptoConverter.svg',
+//                   'description':'Scrum'
+//                 }];
+
 
 ngOnInit() {
 }

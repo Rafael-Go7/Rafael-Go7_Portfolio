@@ -1,6 +1,59 @@
-<p>portfolio works!</p>
+<!-- <p>portfolio works!</p>
 <div class="skill" *ngFor="let skill of skills_row1; let i = index;">
     
     <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
     <div class="skillDescription">{{skill.skillDescription}}</div>
+</div> -->
+
+
+
+<div class="PortfolioMajor">
+
+    <div class="myWork">
+        My Work
+        <p>
+            This page is a sample of my work - please feelfree to try them out.
+        </p>
+    </div>
+
+    <!-- <div class="Projects" *ngFor="let project of Projects; let i = index;">
+        <div class="title">{{project.title}}</div>
+        <img class="icons_IMG-ArrayOutput" src="./../assets/img/projects/{{project.img}}">
+        <div class="projectSkills">{{project.projectSkills}}</div>
+        <p>{{project.description}}</p>
+    </div> -->
+    <div class="Projects_A">
+        <img class="icons_IMG-ArrayOutput" src="./../assets/img/projects/join.svg">
+        
+        <div class="infos">
+            <div class="title">JOIN</div>
+            <div class="projectSkills">Angular | Typescript | HTML | CSS | Firebase </div>
+            <p>Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories. </p>
+            
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Test</a>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="Projects_B">
+    
+        <div class="infos">
+            <div class="title">Pokédex</div>
+            <div class="projectSkills">Javascript | HTML | CSS | Api </div>
+            <p>Based on the PokéAPI a simple library that provides and catalogues pokemon information.</p>
+            
+            <div class="links">
+                <a href="#">GitHub</a>
+                <a href="#">Live Test</a>
+            </div>
+        </div>
+
+        <img class="icons_IMG-ArrayOutput" src="./../assets/img/projects/pokedex.svg">
+    </div>
+
+
 </div>
