@@ -1,4 +1,4 @@
-.frontBoxMajor{
+.frontBoxMajor {
     height: calc(100vh - 17px);
     max-height: 100%;
     // width: 100vw;
@@ -6,9 +6,8 @@
     margin-right: 10%;
     background-color: #FFFFFF;
     display: flex;
-    justify-content: space-between;
-
-    position: relative;
+    justify-content: flex-end;
+    // position: relative;
     top: 0;
     z-index: 0;
 
@@ -16,7 +15,7 @@
     background-size: 70vh;
     background-repeat: no-repeat;
     background-position-x: 0px;
-    background-position-y: top;  
+    background-position-y: top;
 
     img {
         // height:80%;
@@ -28,15 +27,19 @@
 
 }
 
-.welcome{
+.welcome {
     margin-top: 200px;
-    // margin-left: 100px;
-    max-width: 50%;
-    position: absolute;
-    right: 0;
+    margin-left: 1000px;
+    // max-width: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    // position: absolute;
+    // right: 0;
     // padding-left: 50%;
 
-    p{
+    p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-style: normal;
@@ -44,6 +47,12 @@
         color: #5988FF;
         margin: 0;
     }
+
+    // .headline {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: flex-end;
+    // }
     
     font-family: 'Baloo Bhai Regular';
     font-weight: 400;
@@ -53,11 +62,14 @@
     color:#5988FF;
 }
 
-.welcomePhoto{
+.welcomePhoto {
     display: flex;
     position: absolute;
     bottom: 0;
+    left: 0;
     z-index: 3;
+
+    
     img {
         height: 70%;
         // width: 100%;
@@ -66,14 +78,13 @@
     }
 }
 
-.scroll{
+.scroll {
     display: flex;
     align-items: center;
     flex-direction: column;
     z-index: 1;
 
-
-    p{
+    p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -87,15 +98,15 @@
     }
 }
 
-.rightBottomCorner{
+.rightBottomCorner {
     display: flex;
     justify-content: space-between;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10%;
 }
 
-.digitalLinks{
+.digitalLinks {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -107,23 +118,31 @@
     // position: absolute;
     // right: 0px;
     // bottom: 0px;
-    
-    img{
+
+    img {
         height: 40px;
         margin-top: 25px;
     }
 
-    a{
-        
-    }
 }
 
-.digiT{
+.digiT {
     z-index: 3;
-    transition: padding-right 250ms ease-out;
 
-    &:hover{
-           padding-right:15px;
+    a {
+        width: 100px;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+            transition: all 75ms ease-out;
+        }
+
+        &:hover {
+            img {
+                transform: translateX(-30px);
+            }
+        }
     }
 }
 

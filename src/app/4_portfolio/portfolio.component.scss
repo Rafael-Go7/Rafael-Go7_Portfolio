@@ -15,6 +15,7 @@
     display: flex;
     justify-content: flex-start;
     margin-top: 100px;
+    width: 100%;
     
     font-family: 'Baloo Bhai Regular';
     font-weight: 400;
@@ -35,10 +36,12 @@
 .infos{
     display: flex;
     flex-direction: column;
+    max-width: 50%;
+    min-width: 30%;
 }
 
 .Projects_A{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -55,6 +58,7 @@
     img {
         width: 620px;
         height: 393px;
+        margin-right: 10%; 
     }
 
     .projectSkills{
@@ -107,7 +111,7 @@
 }
 
 .Projects_B{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between;
 
@@ -123,6 +127,7 @@
     img {
         width: 620px;
         height: 393px;
+        margin-left: 10%; 
     }
 
     .projectSkills{
