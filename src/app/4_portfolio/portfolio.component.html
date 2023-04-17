@@ -1,19 +1,17 @@
-<!-- <p>portfolio works!</p>
-<div class="skill" *ngFor="let skill of skills_row1; let i = index;">
-    
-    <img class="icons_IMG-ArrayOutput" src="./../assets/img/logos/2_SkillsSet/{{skill.img}}">
-    <div class="skillDescription">{{skill.skillDescription}}</div>
-</div> -->
-
-
-
 <div class="PortfolioMajor">
 
     <div class="myWork">
+        <div class="WorkBubbleSmall">
+            <img src="./../assets/img/bubble_blue_small.svg">
+        </div>
         My Work
-        <p>
-            This page is a sample of my work - please feelfree to try them out.
-        </p>
+
+        <div class="WorkSample">
+            <p>
+                This page is a sample of my work - please feelfree to try <br> them out.
+            </p>
+            <div class="WorkBubbleMidBackground"></div>
+        </div>
     </div>
 
     <!-- <div class="Projects" *ngFor="let project of Projects; let i = index;">
@@ -23,8 +21,9 @@
         <p>{{project.description}}</p>
     </div> -->
     <div class="Projects_A">
-        <img class="icons_IMG-ArrayOutput" src="./../assets/img/projects/join.svg">
-        
+        <!-- <div class="JoinBubbleBig"></div> -->
+            <img class="icons_IMG-ArrayOutput " src="./../assets/img/projects/join.svg">
+
         <div class="infos">
             <div class="title">JOIN</div>
             <div class="projectSkills">Angular | Typescript | HTML | CSS | Firebase </div>
@@ -34,6 +33,7 @@
                 <a href="#">GitHub</a>
                 <a href="#">Live Test</a>
             </div>
+            
         </div>
 
         
@@ -55,5 +55,12 @@
         <img class="icons_IMG-ArrayOutput" src="./../assets/img/projects/pokedex.svg">
     </div>
 
+    <!-- <div class="bubbleMid">
+        <img src="./../assets/img/bubble_blue_middle.svg">
+   
+        <div class="bubbleSmall">
+            <img src="./../assets/img/bubble_blue_middle.svg">
+        </div>
+    </div> -->
 
 </div>
