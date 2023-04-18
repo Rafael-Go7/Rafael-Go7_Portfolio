@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './0_header/header.component';
@@ -10,6 +10,7 @@ import { SkillsSetComponent } from './3_skills-set/skills-set.component';
 import { PortfolioComponent } from './4_portfolio/portfolio.component';
 import { ContactComponent } from './5_contact/contact.component';
 import { FooterComponent } from './6_footer/footer.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './6_footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

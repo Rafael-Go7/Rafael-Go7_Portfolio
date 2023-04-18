@@ -5,7 +5,7 @@
 
     display: flex;
     flex-direction: column;
-
+ 
     font-family: 'Baloo Bhai Regular';
     font-weight: 400;
     font-style: normal;
@@ -13,11 +13,17 @@
     line-height: 100%;
     color:#5988FF;
 
-
+    .contactSub{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
 }
 
 .problemToSolve{
-    max-width: 45%;
+    width: 45%;
 
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -47,6 +53,165 @@
     }
 }
 
-.forms{
-    min-width: 55%;
+form {
+    height: 500px;
+    width: 55%;
+    // min-width: 50%;
+    // z-index: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+
+        input{
+            box-sizing: border-box;
+
+            /* Auto layout */
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 25px;
+            margin-left: 10%;
+            gap: 10px;
+            
+            width: 90%;
+            // height: 50px;
+            
+            /* White */
+            
+            background: #FFFFFF;
+            /* style 2/Style 2 blue/blue */
+            
+            border: 1px solid #5988FF;
+            border-radius: 10px;
+            
+            &.ng-untouched {
+                border: 1px solid #5988FF;
+            }
+
+            &.ng-dirty{
+                border: 1px solid red !important;
+            }
+            
+            // &.ng-invalid {
+            //     border: 1px solid red !important;
+            // }
+
+            &.ng-valid {
+                border: 1px solid green !important;
+            }
+
+            .error {
+                color: red;
+            }
+    }
+
+    textarea{
+            box-sizing: border-box;
+
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 15px 25px;
+            margin-left: 10%;
+            gap: 10px;
+
+            width: 90%;
+            height: 202px;
+
+            /* White */
+
+            background: #FFFFFF;
+            border: 1px solid #5988FF;
+            border-radius: 10px;
+
+            &.ng-untouched {
+                border: 1px solid #5988FF;
+            }
+
+            &.ng-dirty{
+                border: 1px solid red !important;
+            }
+            
+            // &.ng-invalid {
+            //     border: 1px solid red !important;
+            // }
+
+            &.ng-valid {
+                border: 1px solid green !important;
+            }
+
+            .error {
+                color: red !important;
+            }
+    }
+
+    p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        
+    }
+
+    button{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 100%;
+        color: #5988FF;
+        
+        box-sizing: border-box;
+
+        /* Auto layout */
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 30px;
+        gap: 10px;
+
+        width: 200px;
+        height: 58px;
+
+        /* style 2/Style 2 blue/blue */
+
+        border: 2px solid #5988FF;
+        /* s2 shadow */
+
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+        border-radius: 10px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &.disabled{
+            opacity: 0.2;
+            color:#0c1016;
+        }
+    }
+}
+
+// .contact-input {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 40px;
+// }
+
+.error{
+    // bottom: -20px;
+    height: 30px;
+    color: red;
+    font-size: 12px;
+    margin: 0;
+
 }

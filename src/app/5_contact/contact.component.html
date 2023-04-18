@@ -1,19 +1,52 @@
 <div class="ContactMajor">
     Contact
-    <div class="problemToSolve">
-        Got a problem to solve?
 
-        <p>Contact me through this form,
-             I am interested in hearing you,
-              knowing your ideas and contributing
-               to your projects with my work.</p>
+    <div class="contactSub">
 
-        <span>Need a Frontend developer? Contact me!</span>
+        <div class="problemToSolve">
+            Got a problem to solve?
+
+            <p>Contact me through this form,
+                I am interested in hearing you,
+                knowing your ideas and contributing
+                to your projects with my work.</p>
+
+            <span>Need a Frontend developer? Contact me!</span>
+        </div>
+
+        <form [formGroup]="contactForm">
+            <!-- <div class="contact-input"> -->
+
+                    <input formControlName="name" type="text" placeholder="Your name" required>
+                        
+                        <ng-container *ngIf="contactForm.controls['name'].dirty">
+                            <p class="error" >Please enter your name!</p>
+                        </ng-container>
+                    
+
+                    <input formControlName="email" type="email" placeholder="Your email" required>
+                        <ng-container *ngIf="contactForm.controls['email'].dirty">
+                            <p class="error">Your email is required!</p>
+                        </ng-container>
+
+                    <textarea formControlName="message" placeholder="Your message ..." required></textarea>
+                        <ng-container *ngIf="contactForm.controls['message'].errors?.['minlength']">
+                            <p class="error" > Messages must be at least {{contactForm.controls['message'].errors?.['minlength'].requiredLength}} characters long!</p>
+                        </ng-container>
+
+                <button [disabled]="!(contactForm.valid&& (contactForm.dirty || contactForm.touched))" type="submit">Say hello ;)</button>
+            <!-- </div> -->
+        </form>
     </div>
-
-    <div class="forms">
-        <input>
-        <form></form>
-    </div>
-
 </div>
+
+
+
+    <!-- <form action="https://sinan-simsek.developerakademie.net/send_mail/send_mail.php" method="post">
+                <div class="contact-input">
+                    <input type="text" placeholder="Your name" name="name" required>
+                    <input type="email" placeholder="Your email" name="email" required>
+                    <textarea placeholder="Your message ..." name="message" required></textarea>
+                    <button class="main-button">Send message :)</button>
+                </div>
+            </form> -->
