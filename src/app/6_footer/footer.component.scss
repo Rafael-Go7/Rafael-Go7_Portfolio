@@ -5,25 +5,29 @@ footer{
     padding-right: 10%;
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
 }
 
 .footerCentral{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 
     img{
-        height: 100px;
+        height: 70px;
     }
 }
 
 .copyright{
     display: flex;
     flex-direction: column;
+    // justify-content: baseline;
     align-items: center;
+
+    padding-top: 30px;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -32,7 +36,7 @@ footer{
     line-height: 120%;
     color: #FFFFFF;
 
-    p{
+    a{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -41,10 +45,30 @@ footer{
         color: #FFFFFF;
         
         margin-top: 20px;
+        text-decoration: none;
     }
 }
 
 .digitalLinks_footer{
     display: flex;
     align-items: center;
+    padding-top: 30px;
+}
+
+.digiT{
+    
+    a {
+        width: 50px;
+    }
+    
+    img{
+        width: 30px;
+        height: 29.26px;
+        margin-left: 25px;
+        transition: transform .2s; 
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
 }

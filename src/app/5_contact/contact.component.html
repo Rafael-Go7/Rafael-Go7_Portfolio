@@ -12,6 +12,10 @@
                 to your projects with my work.</p>
 
             <span>Need a Frontend developer? Contact me!</span>
+
+            <div class="bubbleMid">
+            </div>
+            
         </div>
 
         <form [formGroup]="contactForm" (submit)="sendMail()" ngNativeValidate #myForm>
@@ -38,9 +42,16 @@
                         <ng-container *ngIf="contactForm.controls['message'].errors?.['minlength']">
                             <p class="error" > Messages must be at least {{contactForm.controls['message'].errors?.['minlength'].requiredLength}} characters long!</p>
                         </ng-container>
-
+          
                 <button [disabled]="!(contactForm.valid&& (contactForm.dirty || contactForm.touched))" type="submit" (click)="onNavigate()" #sendButton>Say hello ;)</button>
             <!-- </div> -->
         </form>
+    </div>
+
+    <div class="upBTNdiv">
+        <button><img src="./../assets/img/arrow_up_white.svg"></button>
+        <div class="upBTNdiv_Bubble">
+            <img src="./../assets/img/bubble_blue_small.svg">
+        </div>
     </div>
 </div>
