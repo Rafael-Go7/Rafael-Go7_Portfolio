@@ -22,58 +22,55 @@
 
 .welcome {
     margin-top: 200px;
-    // margin-left: 1000px;
-    // max-width: 50%;
-    // width: 50%;
     display: flex;
     flex-direction: column;
 
     position: absolute;
     right: 0;
     padding-right: 10%;
-    // padding-left: 50%;
+    z-index: 1;
 
     p {
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 64px;
+        font-size: clamp(24px, 7.5vw, 64px);
         line-height: 100%;
         color: #5988FF;
         margin: 0;
+        
     }
 
-    // .headline {
+    // img{
+    //     display: none;
+    //     z-index: 5;
     // }
     
     font-family: 'Baloo Bhai Regular';
     font-weight: 400;
     font-style: normal;
-    font-size: 128px;
+    font-size: clamp(48px, 7.5vw, 128px);
     line-height: 100%;
     color:#5988FF;
 }
 
 .welcomePhoto {
-    position: absolute;
+    position: relative;
+    margin-left: 8%;
     bottom: 0;
     z-index: 3;
-    margin-left: 8%;
-    // height: 70%;
 
-    .img {
-        // position: relative;
-        // object-fit: contain;
-
-        // height: 100%;
-        // height: 100%;
-        // min-height: 70%;
-        // width: 100%;
-        // width: 892px;
-        
+    img {
+        position: absolute;
+        bottom: 0;
+        height: 90vh;
     }
   
 }
+
+// .welcomePhoto_responsive{
+    
+// }
 
 .scroll {
     display: flex;
@@ -86,13 +83,19 @@
         font-weight: 500;
         font-style: normal;
         font-size: 23px;
-        color: #5988FF;
+        color: rgba(89, 136, 255, 1);
     }
 
-    img {
+    .line{
         height: 330px;
-        width: 5px;
+        width: 2px;
+        background-color:#5988FF;
     }
+
+    // img {
+    //     height: 330px;
+    //     width: 5px;
+    // }
 }
 
 .rightBottomCorner {
@@ -169,6 +172,7 @@
 
 }
 
+
 @media screen and (min-width: 1250px) and (max-width: 1429px) {
 
     .frontBoxMajor{
@@ -192,6 +196,7 @@
     }
 
 }
+
 
 @media screen and (min-width: 1250px) and (max-width: 1349px) {
 
@@ -221,6 +226,7 @@
     }
 }
 
+
 @media screen and (min-width: 1200px) and (max-width: 1249px) {
 
     .frontBoxMajor{
@@ -249,13 +255,15 @@
     }
 }
 
-@media screen and (min-width: 850px) and (max-width: 1199px) {
+
+@media screen and (min-width: 1090px) and (max-width: 1199px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 90vh;
     }
 
     .welcome {
+        margin-top: 150px;
         position: absolute;
         left: 0;
         padding-left: 10%;
@@ -274,35 +282,322 @@
     }
 
     .welcomePhoto {
-        margin-right: 5%;
-        right: 0;
+
+        img{
+            height: 62vh;
+
+        }
     }
 
     // .toolsBottom a:hover img{
     //     filter: invert(54%) sepia(99%) saturate(674%) hue-rotate(165deg) brightness(92%) contrast(93%);
     // }
 
-    .scroll {
+    .rightBottomCorner {
+        right: 2%;
+    }
+
+    .digitalLinks {
+        padding-left: 2%;
+
+    }
+}
+
+
+@media screen and (min-width: 947px) and (max-width: 1089px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size: 90vh;
+    }
+
+    .welcome {
+        margin-top: 150px;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        font-size: 100px;
+        line-height: 100%;
+        color:White;
+        // z-index: 3;
+
         p {
+            font-size: 64px;
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+
+    }
+
+    .welcomePhoto {
+
+        img{
+            height: 62vh;
+
+        }
+    }
+
+    .scroll {
+
+        p{
             color: white;
         }
 
-        img {
-            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(17deg) brightness(104%) contrast(104%);
+        .line{
+            background-color: white;
         }
     }
 
     .rightBottomCorner {
-        position: absolute;
-        left: 10%;
-        right: 90%;
+        right: 2%;
     }
 
     .digitalLinks {
-        padding-left: 50px;
+        padding-left: 100px;
 
-        img {
-            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(17deg) brightness(104%) contrast(104%);
+    }
+}
+
+
+@media screen and (min-width: 821px) and (max-width: 945px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size:  95%;
+    }
+
+    .welcome {
+        margin-top: 150px;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        font-size: 100px;
+        line-height: 100%;
+        color:White;
+        // z-index: 3;
+
+        p {
+            font-size: 64px;
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+
+    }
+
+    .welcomePhoto {
+        margin-left: 20%;
+        img{
+            height: 62vh;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+
         }
     }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 713px) and (max-width: 820px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size: 100%;
+        
+    }
+
+    .welcome {
+        margin-top: 150px;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        font-size: 100px;
+        line-height: 100%;
+        color:White;
+        // z-index: 3;
+
+        p {
+            font-size: 64px;
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+
+    }
+
+    .welcomePhoto {
+        margin-left: 20%;
+        img{
+            height: 62vh;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+
+}
+
+
+@media screen and (min-width: 545px) and (max-width: 712px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size: 70vh;
+        // background-position-y: 75%;
+    }
+
+    .welcome {
+        margin-top: 200px;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        font-size: 80px;
+        line-height: 100%;
+        color:White;
+        // z-index: 3;
+
+        p {
+            font-size: 44px;
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+
+    }
+
+    .welcomePhoto {
+        margin-left: 10%;
+        img{
+            height: 62vh; 
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 544px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size: 80vh;
+    }
+
+    .welcome {
+        margin-top: 200px;
+        position: absolute;
+        // left: 0;
+        padding-left: 10%;
+        line-height: 100%;
+        color:White;
+        word-break: break-all;
+
+        p {
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+    }
+
+    .welcomePhoto {
+        margin-left: 2%;
+
+        img{
+            height: 52vh; 
+            max-width: auto;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+
+}
+
+@media screen and (min-width: 370px) and (max-width: 419px) {
+    .frontBoxMajor{
+        margin-right: 5%;
+        background-size: 80vh;
+    }
+
+    .welcome {
+        margin-top: 200px;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+        line-height: 100%;
+        color:White;
+        word-break: break-all;
+
+        p {
+            line-height: 100%;
+            color: white;
+            word-break: break-all;
+        }
+    }
+
+    .welcomePhoto {
+        margin-left: 2%;
+
+        img{
+            height: 42vh; 
+            max-width: auto;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
+    }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+
 }
