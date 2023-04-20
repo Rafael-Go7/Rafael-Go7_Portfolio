@@ -157,6 +157,9 @@
 // }
 
 
+//    ----   Responsive Design   ----   //
+
+
 @media screen and (min-width: 1430px) and (max-width: 1570px) {
 
     .welcome {
@@ -173,7 +176,7 @@
 }
 
 
-@media screen and (min-width: 1250px) and (max-width: 1429px) {
+@media screen and (min-width: 1350px) and (max-width: 1429px) {
 
     .frontBoxMajor{
         margin-right: 5%;
@@ -555,7 +558,7 @@
 
 }
 
-@media screen and (min-width: 370px) and (max-width: 419px) {
+@media screen and (min-width: 320px) and (max-width: 419px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 80vh;
