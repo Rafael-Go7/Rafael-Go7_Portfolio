@@ -9,7 +9,8 @@
     font-family: 'Baloo Bhai Regular';
     font-weight: 400;
     font-style: normal;
-    font-size: 90px;
+    font-size: clamp(45px, 7vw, 90px);
+    // font-size: 90px;
     line-height: 100%;
     color:#5988FF;
 
@@ -65,7 +66,8 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(23px, 7vw, 32px);
+    // font-size: 32px;
     line-height: 120%;
     color: #5988FF;
 
@@ -261,5 +263,40 @@ form {
     color: red;
     font-size: 12px;
     margin: 0;
+
+}
+
+
+//    ----   Responsive Design   ----   //
+
+
+@media screen and (min-width: 320px) and (max-width: 830px) {
+
+    .contactSub{
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .problemToSolve{
+        width: 100%;
+    }
+    
+    form{
+        width: 100%;
+    
+        input{
+            width: 100%;
+            margin-left: 0;
+        }
+
+        textarea{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+
 
 }
