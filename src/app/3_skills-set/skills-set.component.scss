@@ -9,14 +9,15 @@
     align-items: center;
     flex-direction: column;
 
-    p{
+    h2{
         font-family: 'Baloo Bhai Regular';
         font-weight: 400;
         font-style: normal;
-        font-size: 96px;
+        font-size: clamp(64px, 10vw, 96px);
         line-height: 100%;
         color: #FFFFFF;
-
+        text-align: center;
+        
         margin-top: 80px !important;
         margin: 0;
     }

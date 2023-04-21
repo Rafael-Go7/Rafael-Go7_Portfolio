@@ -35,10 +35,20 @@
         font-weight: 400;
         font-style: normal;
         font-size: clamp(24px, 7.5vw, 64px);
-        line-height: 100%;
+        line-height: 120%;
         color: #5988FF;
         margin: 0;
         
+    }
+
+    h1{
+        font-family: 'Baloo Bhai Regular';
+        font-weight: 400;
+        font-style: normal;
+        font-size: 128px;
+        // font-size: clamp(48px, 7.5vw, 128px);
+        line-height: 120%;
+        color:#5988FF;
     }
 
     // img{
@@ -46,12 +56,6 @@
     //     z-index: 5;
     // }
     
-    font-family: 'Baloo Bhai Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(48px, 7.5vw, 128px);
-    line-height: 100%;
-    color:#5988FF;
 }
 
 .welcomePhoto {
@@ -160,11 +164,15 @@
 //    ----   Responsive Design   ----   //
 
 
-@media screen and (min-width: 1430px) and (max-width: 1570px) {
+@media screen and (min-width: 1519px) and (max-width: 1600px) {
 
     .welcome {
-        font-size: 100px;
-        line-height: 100%;
+
+        h1{
+            font-size: 112px;
+            line-height: 100%;
+        }
+
 
         p {
             font-size: 64px;
@@ -176,7 +184,7 @@
 }
 
 
-@media screen and (min-width: 1350px) and (max-width: 1429px) {
+@media screen and (min-width: 1425px) and (max-width: 1518px) {
 
     .frontBoxMajor{
         margin-right: 5%;
@@ -184,24 +192,25 @@
 
     .welcome {
         padding-right: 5%;
-        font-size: 100px;
-        line-height: 100%;
+
+        h1{
+            font-size: 112px;
+            line-height: 100%;
+        }
 
         p {
             font-size: 64px;
             line-height: 100%;
         }
-
     }
 
     .rightBottomCorner {
         right: 5%;
     }
-
 }
 
 
-@media screen and (min-width: 1250px) and (max-width: 1349px) {
+@media screen and (min-width: 1275px) and (max-width: 1424px) {
 
     .frontBoxMajor{
         margin-right: 5%;
@@ -210,11 +219,14 @@
 
     .welcome {
         padding-right: 5%;
-        font-size: 100px;
-        line-height: 100%;
+
+        h1{
+            font-size: 100px;
+            line-height: 100%;
+        }
 
         p {
-            font-size: 64px;
+            font-size: 56px;
             line-height: 100%;
         }
 
@@ -230,7 +242,7 @@
 }
 
 
-@media screen and (min-width: 1200px) and (max-width: 1249px) {
+@media screen and (min-width: 1200px) and (max-width: 1274px) {
 
     .frontBoxMajor{
         margin-right: 2%;
@@ -239,14 +251,17 @@
 
     .welcome {
         padding-right: 2%;
-        font-size: 100px;
-        line-height: 100%;
 
-        p {
-            font-size: 64px;
+        h1{
+            // font-size: clamp(48px, 7.5vw, 128px);
+            font-size: 96px;
             line-height: 100%;
         }
 
+        p {
+            font-size: 56px;
+            line-height: 100%;
+        }
     }
 
     .welcomePhoto {
@@ -259,7 +274,7 @@
 }
 
 
-@media screen and (min-width: 1090px) and (max-width: 1199px) {
+@media screen and (min-width: 1141px) and (max-width: 1199px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 90vh;
@@ -270,25 +285,25 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        font-size: 100px;
-        line-height: 100%;
-        color:White;
         // z-index: 3;
 
+        h1{
+            font-size: 100px;
+            line-height: 100%;
+            color:White;
+        }
+
         p {
-            font-size: 64px;
+            font-size: 56px;
             line-height: 100%;
             color: white;
             word-break: break-all;
         }
-
     }
 
     .welcomePhoto {
-
         img{
             height: 62vh;
-
         }
     }
 
@@ -302,12 +317,11 @@
 
     .digitalLinks {
         padding-left: 2%;
-
     }
 }
 
 
-@media screen and (min-width: 947px) and (max-width: 1089px) {
+@media screen and (min-width: 947px) and (max-width: 1140px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 90vh;
@@ -318,30 +332,28 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        font-size: 100px;
-        line-height: 100%;
-        color:White;
         // z-index: 3;
 
+        h1{
+            font-size: 100px;
+            color:White;
+        }
+
+
         p {
-            font-size: 64px;
-            line-height: 100%;
+            font-size: 56px;
             color: white;
             word-break: break-all;
         }
-
     }
 
     .welcomePhoto {
-
         img{
             height: 62vh;
-
         }
     }
 
     .scroll {
-
         p{
             color: white;
         }
@@ -356,7 +368,7 @@
     }
 
     .digitalLinks {
-        padding-left: 100px;
+        padding-left: 120px;
 
     }
 }
@@ -373,14 +385,15 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        font-size: 100px;
-        line-height: 100%;
-        color:White;
         // z-index: 3;
 
+        h1{
+            font-size: 100px;
+            color:White;
+        }
+
         p {
-            font-size: 64px;
-            line-height: 100%;
+            font-size: 56px;
             color: white;
             word-break: break-all;
         }
@@ -393,7 +406,6 @@
             height: 62vh;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
-
         }
     }
 
@@ -408,7 +420,6 @@
     .digitalLinks {
        display: none;
     }
-
 }
 
 
@@ -424,18 +435,18 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        font-size: 100px;
-        line-height: 100%;
-        color:White;
         // z-index: 3;
 
+        h1{
+            font-size: 100px;
+            color:White;
+        }
+
         p {
-            font-size: 64px;
-            line-height: 100%;
+            font-size: 56px;
             color: white;
             word-break: break-all;
         }
-
     }
 
     .welcomePhoto {
@@ -458,7 +469,6 @@
     .digitalLinks {
        display: none;
     }
-
 }
 
 
@@ -474,18 +484,18 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        font-size: 80px;
-        line-height: 100%;
-        color:White;
         // z-index: 3;
+
+        h1{
+            font-size: 80px;
+            color:White;
+        }
 
         p {
             font-size: 44px;
-            line-height: 100%;
             color: white;
             word-break: break-all;
         }
-
     }
 
     .welcomePhoto {
@@ -520,16 +530,18 @@
     .welcome {
         margin-top: 200px;
         position: absolute;
-        // left: 0;
+        left: 0;
         padding-left: 10%;
-        line-height: 100%;
-        color:White;
-        word-break: break-all;
+
+        h1{
+            font-size: clamp(48px, 15.5vw, 128px);
+            // font-size: 60px;
+            color:White;
+        }
 
         p {
-            line-height: 100%;
+            font-size: clamp(24px, 7.5vw, 44px);
             color: white;
-            word-break: break-all;
         }
     }
 
@@ -558,7 +570,7 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 419px) {
+@media screen and (min-width: 280px) and (max-width: 419px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 80vh;
@@ -569,14 +581,17 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        line-height: 100%;
-        color:White;
-        word-break: break-all;
+
+        h1{
+            font-size: clamp(48px, 15.5vw, 128px);
+            color:White;
+        }
 
         p {
-            line-height: 100%;
+            // font-size: 44px;
+            font-size: clamp(24px, 7.5vw, 44px);
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
     }
 

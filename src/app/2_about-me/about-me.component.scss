@@ -12,19 +12,19 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 50px;
-}
 
-.letsWork{
-    font-family: 'Baloo Bhai Regular';
-    font-weight: 400;
-    font-style: normal;
-    // font-size: 121px;
-    font-size: clamp(64px, 7vw, 121px);
-    line-height: 100%;
-    color:#5988FF;
 
-    margin-bottom: 40px;
-
+    h2{
+        font-family: 'Baloo Bhai Regular';
+        font-weight: 400;
+        font-style: normal;
+        // font-size: 121px;
+        font-size: clamp(64px, 7vw, 121px);
+        line-height: 100%;
+        color:#5988FF;
+    
+        margin-bottom: 40px;
+    }
 }
 
 .AboutMe{

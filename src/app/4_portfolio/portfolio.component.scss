@@ -19,14 +19,16 @@
     align-items: flex-start;
     width: 100%;
     
-    font-family: 'Baloo Bhai Regular';
-    font-weight: 400;
-    font-style: normal;
-    font-size: clamp(64px, 7vw, 96px);
-    // font-size: 96px;
-    // text-align: center;
-    line-height: 100%;
-    color:#5988FF;
+    h2{
+        font-family: 'Baloo Bhai Regular';
+        font-weight: 400;
+        font-style: normal;
+        font-size: clamp(64px, 10vw, 96px);
+        // font-size: 96px;
+        // text-align: center;
+        line-height: 100%;
+        color:#5988FF;
+    }
 
 }
 
@@ -59,7 +61,7 @@
     // height: 400px;
     width: 100%;
 
-    .title{
+    h3{
         font-family: 'Baloo Bhai Regular';
         font-weight: 400;
         font-style: normal;
@@ -67,6 +69,15 @@
         line-height: 120%;
         color:#5988FF;
     }
+
+    // .title{
+    //     font-family: 'Baloo Bhai Regular';
+    //     font-weight: 400;
+    //     font-style: normal;
+    //     font-size: 45px;
+    //     line-height: 120%;
+    //     color:#5988FF;
+    // }
 
     img {
         height: 400px;
@@ -134,7 +145,7 @@
     // height: 400px;
     width: 100%;
 
-    .title{
+    h3{
         font-family: 'Baloo Bhai Regular';
         font-weight: 400;
         font-style: normal;
@@ -303,7 +314,7 @@
         text-align: center;
         // height: 400px;
         
-        .title{
+        h3{
             margin-top: 20px;
         }
 
@@ -319,7 +330,7 @@
         width: 100%;
         text-align: center;
 
-        .title{
+        h3{
             margin-top: 20px;
         }
 
@@ -357,7 +368,7 @@
         width: 100%;
         text-align: center;
         
-        .title{
+        h3{
             margin-top: 20px;
         }
 
@@ -375,7 +386,7 @@
         width: 100%;
         text-align: center;
 
-        .title{
+        h3{
             margin-top: 20px;
         }
 
@@ -416,7 +427,7 @@
         width: 100%;
         text-align: center;
         
-        .title{
+        h3{
             margin-top: 20px;
         }
 
@@ -434,7 +445,7 @@
         width: 100%;
         text-align: center;
 
-        .title{
+        h3{
             margin-top: 20px;
         }
 
