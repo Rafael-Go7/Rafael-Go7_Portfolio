@@ -47,7 +47,7 @@ header {
 //      ---- BURGER MENU ----    //
 
 
-@media (max-width: 1090px) {
+@media (max-width: 1140px) {
     .navMenu {
         display: none;
         inset: 0;
@@ -156,7 +156,7 @@ header {
 }
 
 
-@media (min-width: 1090px) {
+@media (min-width: 1140px) {
     .hamburger {
         display: none;
     }
@@ -169,7 +169,7 @@ header {
 //    ----   Responsive Design   ----   //
 
 
-@media screen and (min-width: 1090px) and (max-width: 1199px){
+@media screen and (min-width: 1141px) and (max-width: 1199px){
     
     header {
         width: 93%;
@@ -179,26 +179,27 @@ header {
 }
 
 
-@media screen and (min-width: 713px) and (max-width: 1089px){
+@media screen and (min-width: 691px) and (max-width: 1140px){
     
     header {
-        width: 85%;
+        width: 87%;
         margin-left: 5%;
+        margin-right: 8%;
     }
 }
 
 
-@media screen and (min-width: 631px) and (max-width: 712px) {
+// @media screen and (min-width: 631px) and (max-width: 712px) {
 
-    header{
-        width: 90%;
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-}
+//     header{
+//         width: 90%;
+//         margin-right: 5%;
+//         margin-left: 5%;
+//     }
+// }
 
 
-@media screen and (min-width: 420px) and (max-width: 660px) {
+@media screen and (min-width: 420px) and (max-width: 690px) {
 
     header{
         width: 80%;

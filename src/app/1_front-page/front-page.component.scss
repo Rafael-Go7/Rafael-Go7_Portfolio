@@ -289,15 +289,13 @@
 
         h1{
             font-size: 100px;
-            line-height: 100%;
             color:White;
         }
 
         p {
             font-size: 56px;
-            line-height: 100%;
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
     }
 
@@ -343,7 +341,7 @@
         p {
             font-size: 56px;
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
     }
 
@@ -395,7 +393,7 @@
         p {
             font-size: 56px;
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
 
     }
@@ -423,7 +421,7 @@
 }
 
 
-@media screen and (min-width: 713px) and (max-width: 820px) {
+@media screen and (min-width: 691px) and (max-width: 820px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 100%;
@@ -445,7 +443,7 @@
         p {
             font-size: 56px;
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
     }
 
@@ -472,7 +470,7 @@
 }
 
 
-@media screen and (min-width: 545px) and (max-width: 712px) {
+@media screen and (min-width: 545px) and (max-width: 690px) {
     .frontBoxMajor{
         margin-right: 5%;
         background-size: 70vh;
@@ -494,7 +492,7 @@
         p {
             font-size: 44px;
             color: white;
-            word-break: break-all;
+            word-break: keep-all;
         }
     }
 
@@ -599,7 +597,7 @@
         margin-left: 2%;
 
         img{
-            height: 42vh; 
+            height: 36vh; 
             max-width: auto;
             -webkit-transform: scaleX(-1);
             transform: scaleX(-1);
