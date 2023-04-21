@@ -12,6 +12,7 @@ import { ContactComponent } from './5_contact/contact.component';
 import { FooterComponent } from './6_footer/footer.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

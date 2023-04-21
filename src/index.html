@@ -6,15 +6,41 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./../assets/img/logos/1_frontPage/logo_webDesign_CC00.svg">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">                       <!--AOS Einbindung-->
+  
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />    <!--local Library-->
+
+  
 </head>
 <body>
   <app-root></app-root>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>   <!--AOS Einbindung-->
+<script src="node_modules/aos/dist/aos.js"></script>    <!--local library-->
 
-  <script>    //AOS Initialisierung
-    AOS.init();           
-  </script>
+
+    <!--ONLINE  -->
+    
+<!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">   AOS Online-Einbindung
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  AOS initialisierung  bei Online-Einbindung
+
+  <script>    
+  setTimeout( () => {
+      AOS.init();
+    }, 50);          AOS Initialisierung
+  </script> -->
+  
+
+  
 </body>
 </html>
+
+
+
+
+
+
+
+          
+
+
+
+
