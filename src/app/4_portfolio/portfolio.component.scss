@@ -279,7 +279,6 @@
 
 //    ----   Responsive Design   ----   //
 
-
 @media screen and (min-width: 660px) and (max-width: 1199px) {
 
     .infos{
@@ -287,7 +286,8 @@
         align-items: center;
 
         p{
-            width: 100%;
+            // width: 100%;
+            max-width: 50%;
         }
 
         .links{
@@ -329,51 +329,119 @@
     }
 }
 
-// @media screen and (min-width: 320px) and (max-width: 659px) {
+@media screen and (min-width: 320px) and (max-width: 659px) {
 
-//     .infos{
-//         min-width: 100%;
-//         align-items: center;
+    .PortfolioMajor{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
 
-//         p{
-//             width: 100%;
-//         }
+    .infos{
+        min-width: 100%;
+        align-items: center;
 
-//         .links{
-//             justify-content: center;
-//         }
-//     }
+        p{
+            max-width: 50%;
+        }
 
-//     .Projects_A{
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: unset;
-//         width: 100%;
-//         text-align: center;
-//         // height: 400px;
+        .links{
+            justify-content: center;
+        }
+    }
+
+    .Projects_A{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        width: 100%;
+        text-align: center;
         
-//         .title{
-//             margin-top: 20px;
-//         }
+        .title{
+            margin-top: 20px;
+        }
 
-//         img {
-//             margin: 0;
-//         }
-//     }
+        img {
+            width: 90vw;
+            height: auto;
+            margin: 0;
+        }
+    }
 
-//     .Projects_B{
-//         flex-direction: column-reverse;
-//         align-items: center;
-//         justify-content: unset;
-//         width: 100%;
-//         text-align: center;
+    .Projects_B{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: unset;
+        width: 100%;
+        text-align: center;
 
-//         .title{
-//             margin-top: 20px;
-//         }
+        .title{
+            margin-top: 20px;
+        }
 
-//         img {
-//             margin: 0;
-//         }
-//     }
-// }
+        img {
+            width: 90vw;
+            height: auto;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 280px) and (max-width: 480px) {
+
+    .PortfolioMajor{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 96%;
+    }
+
+    .infos{
+        min-width: 100%;
+        align-items: center;
+
+        p{
+            max-width: 80%;
+        }
+
+        .links{
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+    .Projects_A{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+        width: 100%;
+        text-align: center;
+        
+        .title{
+            margin-top: 20px;
+        }
+
+        img {
+            width: 90vw;
+            height: auto;
+            margin: 0;
+        }
+    }
+
+    .Projects_B{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: unset;
+        width: 100%;
+        text-align: center;
+
+        .title{
+            margin-top: 20px;
+        }
+
+        img {
+            width: 90vw;
+            height: auto;
+            margin: 0;
+        }
+    }
+}
