@@ -1,7 +1,7 @@
 import { Component, OnInit} from '@angular/core';
-import { Router } from '@angular/router';
+import { Router } from '@angular/router';  // import router-links module
 
-import AOS from 'node_modules/aos/dist/aos.js';
+import AOS from 'node_modules/aos/dist/aos.js'; // import AOS module manually
 
 @Component({
   selector: 'app-root',
@@ -11,7 +11,7 @@ import AOS from 'node_modules/aos/dist/aos.js';
 export class AppComponent implements OnInit{
   title = 'Rafael-Go7_Portfolio';
 
-constructor(public router: Router){}
+constructor(public router: Router){}    // important for the usage of router-links
 
 ngOnInit(){
   AOS.init();   
