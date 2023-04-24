@@ -45,6 +45,11 @@ footer{
         
         margin-top: 20px;
         text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+            font-weight: bold;
+        }
     }
 }
 

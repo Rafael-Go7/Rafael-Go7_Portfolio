@@ -19,29 +19,29 @@ export class ContactComponent implements OnInit {
   async sendMail(){
     console.log('Sending Mail', this.myForm);
 
-    let nameField =  this.nameField.nativeElement;      // rechte Seite ist Äquivalent zu document.getElementById/ wir lesen den Inhalt der Zielfelder aus
+    let nameField =  this.nameField.nativeElement;      // right hand side is equivalent to "document.getElementById"/ we read the content of the target fields
     let emailField = this.emailField.nativeElement;
     let messageField = this.messageField.nativeElement;
     let sendButton =  this.sendButton.nativeElement;
 
-    nameField.disabled = true;          // wir deaktivieren die Zielfelder
+    nameField.disabled = true;          // deactivation of target fields
     emailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
 
         //  senden //
   let fd = new FormData();
-  fd.append('name', nameField.value);   // zu sendender Inhalt wir definiert + verpackt bzw. versandtfertig gemacht
+  fd.append('name', nameField.value);   // content to be send here gets defined + wrapped-up and is being made ready for sending
   fd.append('email', emailField.value);
   fd.append('message', messageField.value);
 
-  await fetch('https://rafael-albrecht.developerakademie.net/_Backends/Portfolio/send_mail/send_mail.php'),   // Inhalt wird gesendet
+  await fetch('https://rafael-go7.com/01_portfolio/php_send_mail/send_mail.php'),   // cotent is being sent
             {
-              method: 'POST',    // mit Hilfe der Post-request Methode wird versendet 
+              method: 'POST',    // we send a message by using the POST-request method 
               body: fd
             };
 
-    // Text anzeigen Nachricht gesendet
+    // show text "message has been sent"
 
   nameField.disabled = false;
   emailField.disabled = false;
@@ -51,7 +51,7 @@ export class ContactComponent implements OnInit {
 
 onNavigate() {
   // your logic here.... like set the url 
-  const url = 'https://rafael-albrecht.developerakademie.net/_Backends/Portfolio/send_mail/success.html';
+  const url = 'https://rafael-go7.com/01_portfolio/send_mail/success.html';
   window.open(url, '_blank');
 }
 

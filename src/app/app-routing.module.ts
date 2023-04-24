@@ -4,8 +4,8 @@ import { FrontPageComponent } from './1_front-page/front-page.component';
 import { ImprintComponent } from './7_imprint/imprint.component';
 
 const routes: Routes = [
-  { path: '', component: FrontPageComponent },
-  { path: 'imprint', component: ImprintComponent },
+  { path: '', component: FrontPageComponent },      // routing path 1 - FrontPage/ defined as "no subdirectory of domain needs to be adressed"
+  { path: 'imprint', component: ImprintComponent }, // routing path 2 - imprint/ defined as "/imprint" subdiretory of doamin needs to be called to get opened
 
 ];
 
