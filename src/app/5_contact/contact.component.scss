@@ -30,25 +30,19 @@
         align-items: center;
         width: 100%;
 
-        button{
-            background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        a{
+            background-image: url('/assets/img/arrow_up_white_default.svg');
+            background-repeat: no-repeat;
             height: 40px;
             width: 40px;
             border: none;
-            border-radius: 100%;
         
             &:hover{
-                border: 3px solid rgb(51, 107, 249);
-                background-color: white;
-                background: none;
+                background: url('/assets/img/arrow_up_blue_default.svg');
+                background-repeat: no-repeat;
                 cursor: pointer;
             }
 
-            img {
-                &:hover{
-
-                }
-            }
         }
 
         .upBTNdiv_Bubble {

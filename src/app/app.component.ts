@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 import AOS from 'node_modules/aos/dist/aos.js';
 
@@ -10,10 +11,11 @@ import AOS from 'node_modules/aos/dist/aos.js';
 export class AppComponent implements OnInit{
   title = 'Rafael-Go7_Portfolio';
 
-constructor(){}
+constructor(public router: Router){}
 
 ngOnInit(){
   AOS.init();   
+
 }
 
 
