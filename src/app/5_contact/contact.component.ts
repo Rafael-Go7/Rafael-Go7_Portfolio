@@ -51,7 +51,7 @@ export class ContactComponent implements OnInit {
 
 onNavigate() {
   // your logic here.... like set the url 
-  const url = 'https://rafael-go7.com/send_mail/success.html';
+  const url = 'https://rafael-go7.com/php_send_mail/success.html';
   window.open(url, '_blank');
 }
 
