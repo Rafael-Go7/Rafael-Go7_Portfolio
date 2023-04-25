@@ -40,10 +40,11 @@ switch ($_SERVER['REQUEST_METHOD']) {
         exit;
     case ("POST"): //Send the email;
 
-        $subject = "Contact From " . $_POST['name'];
-        $headers = "From:  noreply@developerakademie.com";
+        $subject = "Contact From " . $_POST['name'];    // variable 'name' is being added from _POST method "fd" variable in contact.components.ts (code-line 34-41)
+        $email = $_POST['email'];                       // variable 'email' is being added from _POST method "fd" variable in contact.components.ts (code-line 35-41)
+        $headers = "From:" . $_POST['email'];              // put the $_POST['email'] variable into the header // alternatively we could use a simple string,e.g. "From:  noreply@developerakademie.com";
 
-        mail($recipient, $subject, $_POST['message'], $headers);
+        mail($recipient, $subject, $_POST['message'], $headers); 
         header("Location: " . $redirect); 
 
         break;
