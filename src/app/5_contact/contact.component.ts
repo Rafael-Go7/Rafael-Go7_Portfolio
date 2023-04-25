@@ -35,7 +35,7 @@ export class ContactComponent implements OnInit {
   fd.append('email', emailField.value);
   fd.append('message', messageField.value);
 
-  await fetch('https://rafael-go7.com/01_portfolio/php_send_mail/send_mail.php'),   // cotent is being sent
+  await fetch('https://rafael-go7.com/php_send_mail/send_mail.php'),   // cotent is being sent
             {
               method: 'POST',    // we send a message by using the POST-request method 
               body: fd
@@ -51,7 +51,7 @@ export class ContactComponent implements OnInit {
 
 onNavigate() {
   // your logic here.... like set the url 
-  const url = 'https://rafael-go7.com/01_portfolio/send_mail/success.html';
+  const url = 'https://rafael-go7.com/send_mail/success.html';
   window.open(url, '_blank');
 }
 
