@@ -1,16 +1,16 @@
-.imprintMajor{
+.legalMajor{
     width: 100%;
     background: rgba(255, 255, 255, 1);
     padding-top: 100px;
     // box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-.textBody{
+.textBody_LegalFirst{
     width: 80%;
-
-    margin: 10%;
-    margin-top: 100px;
-    margin-bottom: 5%;
+    
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
 
     font-family: 'Montserrat';
     font-style: normal;
@@ -19,6 +19,8 @@
     line-height: 120%;
     color: #000000;
 
+    word-break: keep-all;
+
     h1{
         font-family: 'Baloo';
         font-style: normal;
@@ -26,5 +28,56 @@
         font-size: 45px;
         line-height: 120%;
         color: #5988FF;
+    }
+}
+
+.textBody_DataPro{
+    width: 80%;
+
+    margin-top: 50px;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+
+    word-break: keep-all;
+
+    h1{
+        font-family: 'Baloo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 120%;
+        color: #5988FF;
+    }
+
+    h2{
+        font-family: 'Baloo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 120%;
+        color: #5988FF;
+    }
+
+    h3{
+        font-family: 'Baloo';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 120%;
+        color: #5988FF;
+    }
+
+    ul{
+        list-style-type: disc;
+        padding-left: 5%;
+        // padding-right: 20%;
     }
 }

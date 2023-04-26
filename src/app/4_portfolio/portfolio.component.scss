@@ -70,19 +70,17 @@
         color:#5988FF;
     }
 
-    // .title{
-    //     font-family: 'Baloo Bhai Regular';
-    //     font-weight: 400;
-    //     font-style: normal;
-    //     font-size: 45px;
-    //     line-height: 120%;
-    //     color:#5988FF;
-    // }
-
     img {
         height: 400px;
         width: 600px;
-        margin-right: 5%; 
+        margin-right: 5%;
+        box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.1);
+        transition: all 200ms ease-out;
+
+        &:hover{
+            transform: scale(1.1);
+            // transform: translateY(-30px);
+        }
     }
 
     .projectSkills{
@@ -157,7 +155,13 @@
     img {
         height: 400px;
         width: 600;
-        margin-left: 5%; 
+        margin-left: 5%;
+        box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.1);
+        transition: all 75ms ease-out;
+
+        &:hover{
+            transform: translateY(-30px);
+        }
     }
 
     .projectSkills{
