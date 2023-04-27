@@ -140,7 +140,7 @@
         justify-content: flex-end;
 
         img {
-            transition: all 75ms ease-out;
+            transition: all 75ms ease-out;  // // good UserExperience between 50ms - 200ms
         }
 
         &:hover {
