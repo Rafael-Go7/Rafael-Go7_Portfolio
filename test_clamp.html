@@ -35,3 +35,32 @@
 </div>
 </body>
 </html>
+
+
+
+<!--BACKUP -- CONTACT-Form-->
+
+
+<input formControlName="name" type="text" placeholder="Your name" required #nameField>
+<!-- <ng-container *ngIf="contactForm.controls['name'] as name"> -->
+    <ng-container *ngIf="contactForm.controls['name'].dirty">
+        <p class="error">Please enter your name!</p>
+    </ng-container>
+<!-- </ng-container> -->
+
+
+<input formControlName="email" type="email" placeholder="Your email" required #emailField>
+<ng-container *ngIf="contactForm.controls['email'].errors?.['email']">
+<!-- <ng-container *ngIf="contactForm.controls['email'] as email"> -->
+    <ng-container *ngIf="contactForm.controls['email'].dirty || contactForm.controls['email'].errors?.['required']">
+        <p class="error">Your email is required!</p>
+    <!-- </ng-container> -->
+ </ng-container>
+</ng-container>
+
+<textarea formControlName="message" placeholder="Your message ..." required #messageField></textarea>
+<ng-container *ngIf="contactForm.controls['message'].errors?.['minlength']">
+    <p class="error" > Messages must be at least {{contactForm.controls['message'].errors?.['minlength'].requiredLength}} characters long!</p>
+</ng-container>
+
+<button [disabled]="!(contactForm.valid&& (contactForm.dirty || contactForm.touched))" type="submit" (click)="onNavigate()" #sendButton>Say hello ;)</button>

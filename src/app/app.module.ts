@@ -13,7 +13,6 @@ import { FooterComponent } from './6_footer/footer.component';
 import { LegalComponent } from './7_legal/legal.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

@@ -19,32 +19,76 @@
         </div>
 
         <form [formGroup]="contactForm" (submit)="sendMail()" ngNativeValidate #myForm>
-            <!-- <div class="contact-input"> -->
-
-                    <input formControlName="name" type="text" placeholder="Your name" required #nameField>
-                        <!-- <ng-container *ngIf="contactForm.controls['name'] as name"> -->
-                            <ng-container *ngIf="contactForm.controls['name'].dirty">
-                                <p class="error">Please enter your name!</p>
+            
+                <div class="contactInputs">
+                    
+                        <div class="contactInputsOrder">
+                            <input formControlName="name" type="text" placeholder="Your name" required #nameField>
+                            
+                            <ng-container *ngIf="contactForm.controls['name'].dirty && contactForm.controls['name'].invalid">
+                                <img src="./../assets/img/symbol_invalid.svg">
                             </ng-container>
-                        <!-- </ng-container> -->
-                    
-                    
-                    <input formControlName="email" type="email" placeholder="Your email" required #emailField>
-                    <ng-container *ngIf="contactForm.controls['email'].errors?.['email']">
-                        <!-- <ng-container *ngIf="contactForm.controls['email'] as email"> -->
-                            <ng-container *ngIf="contactForm.controls['email'].dirty || contactForm.controls['email'].errors?.['required']">
-                                <p class="error">Your email is required!</p>
-                            <!-- </ng-container> -->
-                         </ng-container>
-                    </ng-container>
 
-                    <textarea formControlName="message" placeholder="Your message ..." required #messageField></textarea>
-                        <ng-container *ngIf="contactForm.controls['message'].errors?.['minlength']">
-                            <p class="error" > Messages must be at least {{contactForm.controls['message'].errors?.['minlength'].requiredLength}} characters long!</p>
+                            <ng-container *ngIf="contactForm.controls['name'].valid">
+                                <img src="./../assets/img/symbol_valid.svg">
+                            </ng-container>
+
+                        </div>
+                  
+                    <ng-container *ngIf="contactForm.controls['name'].dirty && contactForm.controls['name'].invalid">
+                            <p class="error">Please enter your name!</p>
+                    </ng-container>
+            
+                </div>
+            
+                <div class="contactInputs">
+        
+                    <div class="contactInputsOrder">
+                        <input formControlName="email" type="email" placeholder="Your email" required #emailField>
+                        
+                        <ng-container *ngIf="contactForm.controls['email'].dirty && contactForm.controls['email'].invalid">
+                            <img src="./../assets/img/symbol_invalid.svg">
                         </ng-container>
-          
-                <button [disabled]="!(contactForm.valid&& (contactForm.dirty || contactForm.touched))" type="submit" (click)="onNavigate()" #sendButton>Say hello ;)</button>
-            <!-- </div> -->
+
+                        <ng-container *ngIf="contactForm.controls['email'].valid">
+                            <img src="./../assets/img/symbol_valid.svg">
+                        </ng-container>
+
+                    </div>
+
+                    <!-- <ng-container *ngIf="contactForm.controls['email'].errors?.['email']"> -->
+                        <ng-container *ngIf="contactForm.controls['email'].dirty || contactForm.controls['email'].errors?.['required']">
+                                <p class="error" *ngIf="contactForm.controls['email'].errors?.['email']">Your email is required!</p>
+                            
+                         </ng-container>
+                    <!-- </ng-container> -->
+            
+                </div>
+            
+                <div class="contactTextarea">
+                    <div class="contactTextareaOrder">
+                        <textarea formControlName="message" placeholder="Your message ..." required #messageField></textarea>
+                        
+                        <ng-container *ngIf="contactForm.controls['message'].invalid && contactForm.controls['message'].dirty">
+                            <img src="./../assets/img/symbol_invalid.svg">
+                        </ng-container>
+
+                        <ng-container *ngIf="contactForm.controls['message'].valid">
+                            <img src="./../assets/img/symbol_valid.svg">
+                        </ng-container>
+
+                    </div>
+            
+                    <ng-container *ngIf="contactForm.controls['message'].errors?.['minlength']">
+                        <p class="error" > Messages must be at least {{contactForm.controls['message'].errors?.['minlength'].requiredLength}} characters long!</p>
+                    </ng-container>
+                    
+
+                    <button [disabled]="!(contactForm.valid&& (contactForm.dirty || contactForm.touched))" type="submit" (click)="onNavigate()" #sendButton>Say hello ;)</button>
+                </div>
+            
+               
+           
         </form>
     </div>
 
@@ -55,3 +99,4 @@
         </div>
     </div>
 </div>
+

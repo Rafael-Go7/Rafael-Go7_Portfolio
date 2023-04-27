@@ -55,13 +55,13 @@ onNavigate() {
   const url = 'https://rafael-go7.com/php_send_mail/success.html';
   window.open(url, '_blank');
 }
-
+// https://rafael-go7.com/php_send_mail/success.html
 
 // FormValidation
 
 public contactForm: FormGroup = new FormGroup({
   name: new FormControl('',[
-    Validators.required],[]),
+    Validators.required, Validators.minLength(3)],[]),
   email: new FormControl('', [
     Validators.required, Validators.email],[]),
   message: new FormControl('', [Validators.required, Validators.minLength(20)],[]),

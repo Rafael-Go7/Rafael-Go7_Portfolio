@@ -47,6 +47,7 @@
         }
 
         .upBTNdiv_Bubble {
+            margin-top: 35px;
             
             img {
                 height: 75px;
@@ -114,104 +115,14 @@ form {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap:40px;
 
-        input{
-            box-sizing: border-box;
-
-            /* Auto layout */
-            
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 15px 25px;
-            margin-left: 10%;
-            gap: 10px;
-            
-            width: 90%;
-            // height: 50px;
-            
-            /* White */
-            
-            background: #FFFFFF;
-            /* style 2/Style 2 blue/blue */
-            
-            border: 1px solid #5988FF;
-            border-radius: 10px;
-            
-            &.ng-untouched {
-                border: 1px solid #5988FF;
-            }
-
-            &.ng-dirty{
-                border: 1px solid red !important;
-            }
-            
-            // &.ng-invalid {
-            //     border: 1px solid red !important;
-            // }
-
-            &.ng-valid {
-                border: 1px solid green !important;
-            }
-
-            .error {
-                color: red;
-            }
-    }
-
-    textarea{
-            box-sizing: border-box;
-
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            padding: 15px 25px;
-            margin-left: 10%;
-            gap: 10px;
-
-            width: 90%;
-            height: 202px;
-
-            /* White */
-
-            background: #FFFFFF;
-            border: 1px solid #5988FF;
-            border-radius: 10px;
-
-            &.ng-untouched {
-                border: 1px solid #5988FF;
-            }
-
-            &.ng-dirty{
-                border: 1px solid red !important;
-            }
-            
-            // &.ng-invalid {
-            //     border: 1px solid red !important;
-            // }
-
-            &.ng-valid {
-                border: 1px solid green !important;
-            }
-
-            .error {
-                color: red !important;
-            }
-    }
-
-    p {
-        font-family: "Montserrat";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        
-    }
-
     button{
+        position: absolute;
+        bottom: 0;
+        
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
@@ -222,7 +133,7 @@ form {
         box-sizing: border-box;
 
         /* Auto layout */
-
+    
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -258,22 +169,155 @@ form {
     }
 }
 
-// .contact-input {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 40px;
-// }
 
-.error{
-    // bottom: -20px;
-    height: 30px;
-    color: red;
-    font-size: 12px;
-    margin: 0;
+     
+.contactInputs{
+    min-width: 90%;
+    margin-left: 10%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+        
+    .contactInputsOrder{
+        display: flex;
+        align-items: center;
+        width: 100%;        
+        border: 1px solid #5988FF;
+        border-radius: 10px;
+        z-index: 2;
+        background: #FFFFFF;
+
+        input{
+            box-sizing: border-box;
+
+            /* Auto layout */
+            
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 25px;
+            gap: 10px;
+            // border: 1px solid #5988FF;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            
+            width: 90%;
+            // height: 50px;
+            
+            /* White */
+            
+            background: #FFFFFF;
+            /* style 2/Style 2 blue/blue */ 
+            // outline: none;
+            z-index: 0;
+
+            // &.ng-untouched {
+            //     border: 1px solid #5988FF;
+            // }
+            // &.ng-dirty{
+            //     border: 1px solid red !important;
+            // }
+            // &.ng-valid {
+            //     border: 1px solid green !important;
+            // }
+
+        }
+    
+        img {
+        height: 34px;
+        }       
+    }
+
+    .error {
+        color: red;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
 
 }
+
+
+.contactTextarea{
+    min-width: 90%;
+    margin-left: 10%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 0;
+    position: relative;
+            
+    .contactTextareaOrder{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        border: 1px solid #5988FF;
+        border-radius: 10px;
+        z-index: 2;
+        background: #FFFFFF;
+
+        textarea{
+            box-sizing: border-box;
+        
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 15px 25px;
+            gap: 10px;
+            width: 90%;
+            height: 202px;
+            /* White */
+            background: #FFFFFF;
+            border: none;
+            outline: none;
+            resize: none;
+            border-radius: 10px;
+
+            // &.ng-untouched {
+            //     border: 1px solid #5988FF;
+            // }
+            // &.ng-dirty{
+            //     border: 1px solid red !important;
+            // }
+            // &.ng-valid {
+            //     border: 1px solid green !important;
+            // }
+
+        }
+
+        img {
+            height: 34px;
+            margin-top: 7px;
+        }
+    }
+    
+    .error {
+        color: red !important;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+    }
+    
+}
+
+
+
+// .error{
+//     // bottom: -20px;
+//     height: 30px;
+//     color: red;
+//     font-size: 12px;
+//     margin: 0;
+
+// }
 
 
 //    ----   Responsive Design   ----   //
@@ -290,11 +334,23 @@ form {
 
     .problemToSolve{
         width: 100%;
+        margin-bottom: 40px;
     }
     
     form{
         width: 100%;
     
+        .contactInputs{
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        .contactTextarea{
+            width: 100%;
+            margin-left: 0%;
+            min-height: 320px;
+        }
+
         input{
             width: 100%;
             margin-left: 0;
