@@ -10,7 +10,7 @@ import { SkillsSetComponent } from './3_skills-set/skills-set.component';
 import { PortfolioComponent } from './4_portfolio/portfolio.component';
 import { ContactComponent } from './5_contact/contact.component';
 import { FooterComponent } from './6_footer/footer.component';
-import { ImprintComponent } from './7_imprint/imprint.component';
+import { LegalComponent } from './7_legal/legal.component';
 
 
 
@@ -24,7 +24,7 @@ import { ImprintComponent } from './7_imprint/imprint.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    ImprintComponent
+    LegalComponent
   ],
   imports: [
     BrowserModule,
