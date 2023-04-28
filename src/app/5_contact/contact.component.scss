@@ -25,42 +25,12 @@
         margin-top: 50px;
     }
 
-    .upBTNdiv{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-
-        a{
-            background-image: url('/assets/img/arrow_up_white_default.svg');
-            background-repeat: no-repeat;
-            height: 40px;
-            width: 40px;
-            border: none;
-        
-            &:hover{
-                background: url('/assets/img/arrow_up_blue_default.svg');
-                background-repeat: no-repeat;
-                cursor: pointer;
-            }
-
-        }
-
-        .upBTNdiv_Bubble {
-            margin-top: 35px;
-            
-            img {
-                height: 75px;
-                width: auto;
-                margin-bottom: 50px;
-            }
-        }
-        
-    }
 }
 
 .problemToSolve{
     width: 45%;
+    position: relative;
+    z-index: 0;
 
     h4{
         font-family: 'Montserrat', sans-serif;
@@ -90,28 +60,73 @@
         font-weight: 400;
         font-size: 16px;
         line-height: 120%;
-        color: #000000;
         color: #5988FF;
-    }
 
-    .bubbleMid{
-        position: relative;
-        height: 300px;
-        max-width:220px;
-        left: 40%;
-        top: 50px;
-        background-image: url("/assets/img/bubble_blue_middle.svg");
-        background-repeat: no-repeat;
-        z-index: -1;
+        b{
+            font-weight: bold;
+        }
     }
 
 }
+
+
+//  -----    BUBBLES (unresponsive)  ----- 
+
+
+.bubbleMid{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 35%;
+
+    img {
+        height: 220px;
+        z-index: 1;
+    }
+}
+
+.upBTNdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-height: 180px;
+    width: 100%;
+
+    a{
+        background-image: url('/assets/img/arrow_up_white_default.svg');
+        background-repeat: no-repeat;
+        height: 40px;
+        width: 40px;
+        border: none;
+        padding-bottom: 40px;
+    
+        &:hover{
+            background: url('/assets/img/arrow_up_blue_default.svg');
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+    }
+
+    .upBTNdiv_Bubble {
+        padding-top: 25px;
+        
+        img {
+            height: 75px;
+            width: auto;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+
+//  -----    FORM (unresponsive)  ----- 
+
 
 form {
     height: 500px;
     width: 55%;
     // min-width: 50%;
-    z-index: 0;
+    z-index: 2;
 
     display: flex;
     flex-direction: column;
@@ -131,8 +146,6 @@ form {
         color: #5988FF;
         
         box-sizing: border-box;
-
-        /* Auto layout */
     
         display: flex;
         flex-direction: row;
@@ -144,10 +157,7 @@ form {
         width: 200px;
         height: 58px;
 
-        /* style 2/Style 2 blue/blue */
-
         border: 2px solid #5988FF;
-        /* s2 shadow */
 
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
         border-radius: 10px;
@@ -168,8 +178,6 @@ form {
         }
     }
 }
-
-
      
 .contactInputs{
     min-width: 90%;
@@ -206,11 +214,9 @@ form {
             
             width: 90%;
             // height: 50px;
-            
-            /* White */
-            
+
             background: #FFFFFF;
-            /* style 2/Style 2 blue/blue */ 
+
             // outline: none;
             z-index: 0;
 
@@ -272,7 +278,7 @@ form {
             gap: 10px;
             width: 90%;
             height: 202px;
-            /* White */
+
             background: #FFFFFF;
             border: none;
             outline: none;
@@ -310,20 +316,25 @@ form {
 
 
 
-// .error{
-//     // bottom: -20px;
-//     height: 30px;
-//     color: red;
-//     font-size: 12px;
-//     margin: 0;
-
-// }
-
-
 //    ----   Responsive Design   ----   //
 
 
-@media screen and (min-width: 280px) and (max-width: 830px) {
+@media screen and (min-width: 831px) and (max-width: 950px) {
+
+    //  -----    BUBBLES (responsive)  ----- 
+    .bubbleMid{
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 20%;
+
+        img {
+            height: 220px;
+            z-index: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 830px) {
 
     .contactSub{
         flex-direction: column;
@@ -362,6 +373,82 @@ form {
         }
     }
 
+    //  -----    BUBBLES (responsive)  ----- 
 
+    .bubbleMid{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 40%;
+
+        img {
+            height: 180px;
+            z-index: 1;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 430px) {
+
+    .contactSub{
+        flex-direction: column;
+        align-items: center;
+        // justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .problemToSolve{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    form{
+        width: 100%;
+    
+        .contactInputs{
+            width: 100%;
+            margin-left: 0%;
+        }
+
+        .contactTextarea{
+            width: 100%;
+            margin-left: 0%;
+            min-height: 320px;
+        }
+
+        input{
+            width: 100%;
+            margin-left: 0;
+        }
+
+        textarea{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+
+    //  -----    BUBBLES (responsive)  ----- 
+
+    .bubbleMid{
+        position: absolute;
+        margin-top: 125px;
+        margin-left: 35%;
+
+        img {
+            height: 100px;
+            z-index: 1;
+        }
+    }
+
+    .upBTNdiv_Bubble {
+        padding-top: 25px;
+        
+        img {
+            height: 58px !important;
+            width: auto;
+            margin-bottom: 50px;
+        }
+    }
 
 }
