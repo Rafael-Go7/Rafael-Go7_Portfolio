@@ -29,6 +29,10 @@
 
 .AboutMe{
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
     p{
         font-family: 'Montserrat', sans-serif;
         font-weight: 400;
@@ -80,51 +84,171 @@
 
 }
 
-// .bubbleMid_aboutMe {
-//     display: flex;
-//     justify-content: space-between;
-//     background-image: url("/assets/img/bubble_blue_middle.svg");
-//     height: 210px;
-//     z-index: 3;
-//     position: relative;
-//         margin-top: -100px;
-//         margin-left: 45%;
-    
-//     // img {
-//     //     height: 210px;
-//     //     position: relative;
-//     //     margin-top: -100px;
-//     //     margin-left: 45%;
-//     //     z-index: 3;
-//     // }
-// }
 
-// .bubbleSmall{
-//     margin-right: 15%;
-//     img {
-//         height: 80px;
-//         position: relative;
-//         margin-top: 30px;
-//         z-index: 3;
-//     }
-// }
+    //  -----    BUBBLES (unresponsive)  ----- 
+
+
+.bubbleMid_aboutMe {
+    display: flex;
+    // justify-content: space-between;
+    // background-image: url("/assets/img/bubble_blue_middle.svg");
+    // height: 210px;
+    // z-index: 3;
+    // position: relative;
+    //     margin-top: -100px;
+    //     margin-left: 45%;
+    z-index: 2;
+    
+    img {
+        height: 210px;
+        margin-top: -100px;
+        margin-left: 35%;
+        z-index: 2;
+    }
+}
+
+.bubbleSmall{
+    margin-left: 15%;
+    z-index: 2;
+
+    img {
+        height: 80px;
+        padding-top: 50px;
+        margin-top: 30px;
+        z-index: 2;
+    }
+}
 
 
 //    ----   Responsive Design   ----   //
 
 
-@media screen and (min-width: 320px) and (max-width: 1430px) {
+@media screen and (min-width: 780px) and (max-width: 1430px) {
 
     .workTogether {
-        // display: flex;
         flex-direction: column !important;
-        // min-width: 100%;
-        // justify-content: space-between;
-        // align-items: center;
     }
 
     .AboutMe{
-        max-width: 100%
+        max-width: 100%;
+        padding-bottom: 50px;
     }
+}
+
+
+@media screen and (min-width: 521px) and (max-width: 779px) {
+
+    .workTogether {
+        flex-direction: column !important;
+        margin-top: 0;
+    }
+
+    .AboutMe{
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+     //  -----    BUBBLES (responsive)  ----- 
+
+     .bubbleMid_aboutMe {
+        
+        img {
+            height: 160px;
+            margin-top: -100px;
+            margin-left: 15%;
+  
+        }
+    }
+    
+    .bubbleSmall{
+        margin-left: 30%;
+        z-index: 2;
+    
+        img {
+            height: 60px;
+            padding-top: 50px;
+            margin-top: 30px;
+            z-index: 2;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 415px) and (max-width: 520px) {
+
+    .workTogether {
+        flex-direction: column !important;
+        margin-top: 0;
+    }
+
+    .AboutMe{
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+     //  -----    BUBBLES (responsive)  ----- 
+
+     .bubbleMid_aboutMe {
+        
+        img {
+            height: 160px;
+            margin-top: -100px;
+            margin-left: 15%;
+  
+        }
+    }
+    
+    .bubbleSmall{
+        margin-left: 15%;
+        z-index: 2;
+    
+        img {
+            height: 60px;
+            padding-top: 50px;
+            margin-top: 30px;
+            z-index: 2;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 280px) and (max-width: 414px) {
+
+    .workTogether {
+        flex-direction: column !important;
+        margin-top: 0;
+    }
+
+    .AboutMe{
+        max-width: 100%;
+        padding-bottom: 50px;
+    }
+
+     //  -----    BUBBLES (responsive)  ----- 
+
+     .bubbleMid_aboutMe {
+        
+        img {
+            height: 120px;
+            margin-top: -100px;
+            margin-left: 10%;
+  
+        }
+    }
+    
+    .bubbleSmall{
+        margin-left: 10%;
+        z-index: 2;
+    
+        img {
+            height: 50px;
+            padding-top: 0;
+            margin-top: 30px;
+            z-index: 2;
+        }
+    }
+
 }
 
