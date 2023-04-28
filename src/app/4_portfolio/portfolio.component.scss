@@ -37,6 +37,8 @@
 .WorkSample{
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    z-index: 1;
 
     p{
         font-family: 'Montserrat', sans-serif;
@@ -254,7 +256,9 @@
     }
 }
 
-//      <----    BUBBLES     ---->
+
+//      <----    BUBBLES (unresponsive)   ---->
+
 
 .WorkBubbleSmall{
     width: 100%;
@@ -269,13 +273,18 @@
     }
 }
 
-.WorkBubbleMidBackground{
-    background-image: url("/assets/img/bubble_blue_middle.svg");
-    background-repeat: no-repeat;
+.WorkBubbleMid{
     height: 225px;
     width: 320px;
+    padding-bottom: 30px;
+    margin-top: -30px;
+    padding-left: 40px;
 }
-//      <--- Bubbles in Projects-Section ---->
+
+
+ //  -----    BUBBLES Entwürfe (unresponsive)  ----- 
+
+
 
 // .JoinBubbleBig{
 //     // height: 500px;
@@ -335,6 +344,11 @@
 
 @media screen and (min-width: 660px) and (max-width: 1199px) {
 
+    
+    .WorkSample{
+        flex-direction: column;
+    }
+
     .infos{
         min-width: 100%;
         align-items: center;
@@ -382,14 +396,25 @@
         }
     }
 
+
     //      <!----    BUBBLES Responsive    ----!>
 
+
     .WorkBubbleSmall{
-        margin-left: 20%
+        margin-left: 20px;
     }
 
+    .WorkBubbleMid{
+        height: 120px;
+        width: 120px;
+        padding-bottom: 20px;
+        margin-top: -5px;
+        padding-left: 55%;
+        z-index: 0;
+    }
 
 }
+
 
 @media screen and (min-width: 481px) and (max-width: 659px) {
 
@@ -397,6 +422,12 @@
         margin-left: 2%;
         margin-right: 2%;
         width: 96%;
+    }
+
+    .WorkSample{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: unset;
     }
 
     .infos{
@@ -448,12 +479,23 @@
         }
     }
 
-        //      <!----    BUBBLES Responsive    ----!>
+    //      <!----    BUBBLES Responsive    ----!>
 
-        .WorkBubbleSmall{
-            margin-left: 20%
-        }
+
+    .WorkBubbleSmall{
+        margin-left: 20px;
+    }
+
+    .WorkBubbleMid{
+        height: 120px;
+        width: 120px;
+        padding-bottom: 20px;
+        margin-top: -5px;
+        // padding-left: 55%;
+        z-index: 0;
+    }
 }
+
 
 @media screen and (min-width: 280px) and (max-width: 480px) {
 
@@ -461,6 +503,12 @@
         margin-left: 2%;
         margin-right: 2%;
         width: 96%;
+    }
+
+    .WorkSample{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: unset;
     }
 
     .infos{
@@ -513,14 +561,24 @@
         }
     }
 
+
         //      <!----    BUBBLES Responsive    ----!>
 
+
         .WorkBubbleSmall{
-            margin-left: 30%;
+            margin-left: 50px;
 
             img {
-                height: 60px;
-                
+                height: 50px;
             }
+        }
+
+        .WorkBubbleMid{
+            height: 90px;
+            width: 90px;
+            padding-bottom: 20px;
+            margin-top: -5px;
+            // padding-left: 55%;
+            z-index: 0;
         }
 }
