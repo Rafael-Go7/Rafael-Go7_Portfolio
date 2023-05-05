@@ -59,12 +59,13 @@
 
 }
 
-.Projects_A{
+.Project{
     margin-bottom: 80px;
     display: flex;
     justify-content: space-between;
     // height: 400px;
     width: 100%;
+    overflow-x: hidden;     // we apply this attribute always to the superior div. In this case we want to prevent AOS effects creating margins during responsive design resolutions. There is another "overflow-x:hidden" attribute in the styles.scss. Only if both files have the same attribute the AOS effects do not create margins during responsive Design resloutions. 
 
     h3{
         font-family: 'Baloo Bhai Regular';
@@ -159,100 +160,11 @@
     }
 }
 
-.Projects_B{
-    margin-bottom: 80px;
-    display: flex;
-    justify-content: space-between;
-    // height: 400px;
-    width: 100%;
-
-    h3{
-        font-family: 'Baloo Bhai Regular';
-        font-weight: 400;
-        font-style: normal;
-        font-size: 45px;
-        line-height: 120%;
-        color:#5988FF;
-    }
-
+.ProjectExtraCSS {
     img {
-        height: 400px;
-        width: 600;
         margin-left: 5%;
-        box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.1);
-        transition: all 75ms ease-out;
-
-        &:hover{
-            // transform: translateY(-30px);
-        }
-    }
-
-    .projectSkills{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 120%;
-        color: #5988FF;
-    }
-
-    p{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 120%;
-        color: #000000;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .links {
-        width: 100%;
-        display: flex;
-        gap: 10px;
-    }
-
-    a{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding: 15px 30px;
-        gap: 10px;
-        height: 25px;
-        min-width: 86px;
-        border: 2px solid #5988FF;
-
-        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
-        border-radius: 10px;
-        
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 23px;
-        line-height: 120%;
-        color: white;
-   
-        text-decoration: none;
-
-        transition: all 0.4s ease-in-out;
-        background-image: linear-gradient(to right,#f8f8ff, #5988FF, #f8f8ff, #0043F0);
-        background-size: 200%;
-        // opacity: 0.4;
-
-        &:hover {
-            background-position: right;
-            transition: all 0.4s ease-in-out;
-            // opacity: 1;
-            border: 2px solid #1955f1;
-        }
-       
-        &:active {
-            font-weight: bold;
-            border: 2px solid #f8f8ff;
-
-        }
+        margin-right: 0 !important;
+        transition: all 75ms ease-out !important;
     }
 }
 
@@ -363,7 +275,7 @@
         }
     }
 
-    .Projects_A{
+    .Project{
         flex-direction: column;
         align-items: center;
         justify-content: unset;
@@ -380,20 +292,9 @@
         }
     }
 
-    .Projects_B{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: unset;
-        width: 100%;
-        text-align: center;
+    .ProjectExtraCSS {
+        flex-direction: column-reverse !important;
 
-        h3{
-            margin-top: 20px;
-        }
-
-        img {
-            margin: 0;
-        }
     }
 
 
@@ -443,7 +344,7 @@
         }
     }
 
-    .Projects_A{
+    .Project{
         flex-direction: column;
         align-items: center;
         justify-content: unset;
@@ -461,22 +362,9 @@
         }
     }
 
-    .Projects_B{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: unset;
-        width: 100%;
-        text-align: center;
+    .ProjectExtraCSS {
+        flex-direction: column-reverse !important;
 
-        h3{
-            margin-top: 20px;
-        }
-
-        img {
-            width: 90vw;
-            height: auto;
-            margin: 0;
-        }
     }
 
     //      <!----    BUBBLES Responsive    ----!>
@@ -525,7 +413,7 @@
         }
     }
 
-    .Projects_A{
+    .Project{
         flex-direction: column;
         align-items: center;
         justify-content: unset;
@@ -543,22 +431,9 @@
         }
     }
 
-    .Projects_B{
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: unset;
-        width: 100%;
-        text-align: center;
+    .ProjectExtraCSS {
+        flex-direction: column-reverse !important;
 
-        h3{
-            margin-top: 20px;
-        }
-
-        img {
-            width: 90vw;
-            height: auto;
-            margin: 0;
-        }
     }
 
 
