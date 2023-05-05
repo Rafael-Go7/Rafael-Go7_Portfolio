@@ -2,8 +2,6 @@ body{
     margin: 0;
 }
 
-
-
 .SuccessMajor{
     height: 100vh;
     width: 100vw;
@@ -24,6 +22,34 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.Message a{
+    text-decoration: none;
+}
+
+.Message a:hover{
+    cursor: pointer;
+    text-shadow: 3px 3px 4px #777;
+}
+
+.Message img{
+    height: 80px;
+    width: auto;
+    
+}
+
+.Message h1{
+    font-family: "Baloo Bhai Regular";
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(24px, 7vw, 44px);
+    line-height: 100%;
+    color: #5988FF;
+    margin: 0;
+    margin-top: 40px;
+
 }
 
 
@@ -52,9 +78,9 @@ footer{
 
 }
 
-.footerCentral img{
+/* .footerCentral img{
     height: 70px;
-}
+} */
 
 .copyright{
     display: flex;
@@ -91,7 +117,7 @@ footer{
     font-weight: bold;
 }
 
-.digitalLinks_footer{
+/* .digitalLinks_footer{
     display: flex;
     align-items: center;
     padding-top: 30px;
@@ -110,7 +136,7 @@ footer{
 
 .digiT img:hover {
     transform: scale(1.5);
-}
+} */
 
 
    /* // ----   Responsive Design   ----   // */
@@ -118,19 +144,19 @@ footer{
 
 @media screen and (min-width: 280px) and (max-width: 830px) {
 
-    footer{
+    /* footer{
         height: 400px;
-    }
+    } */
 
-    .footerCentral{
+    /* .footerCentral{
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin-top: 30px;
-    }
+    } */
 
-    .digiT img{
+    /* .digiT img{
             margin-left: 0;
             margin: 25px;
-    }
+    } */
 }
