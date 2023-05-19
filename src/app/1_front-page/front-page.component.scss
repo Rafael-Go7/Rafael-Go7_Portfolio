@@ -10,6 +10,7 @@
     z-index: 0;
 
     background-image: url("/assets/img/bubble_blue_big_front.svg");
+    // background-size: 50vw;
     background-size: 70vh;
     background-repeat: no-repeat;
     background-position-x: 0px;
@@ -18,7 +19,7 @@
 }
 
 .welcome {
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
 
@@ -60,6 +61,7 @@
         bottom: 40%;
         height: 30vh;
         border: 1px solid black;
+        border-radius: 5px;
     }
   
 }
@@ -225,7 +227,7 @@
     }
 
     .welcome {
-        margin-top: 150px;
+        margin-top: 100px;
         position: absolute;
         left: 0;
         padding-left: 10%;
@@ -265,14 +267,14 @@
 }
 
 
-@media screen and (min-width: 958px) and (max-width: 1180px) {
+@media screen and (min-width: 1019px) and (max-width: 1180px) {
     .frontBoxMajor{
         margin-right: 0;
         background-size: 90vh;
     }
 
     .welcome {
-        margin-top: 150px;
+        margin-top: 100px;
         position: absolute;
         left: 0;
         padding-left: 10%;
@@ -314,19 +316,19 @@
     }
 
     .digitalLinks {
-        padding-left: 120px;
+        padding-left: 260px;
     }
 }
 
 
-@media screen and (min-width: 821px) and (max-width: 957px) {
+@media screen and (min-width: 821px) and (max-width: 1020px) {
     .frontBoxMajor{
         margin-right: 0;
         background-size:  95%;
     }
 
     .welcome {
-        margin-top: 150px;
+        margin-top: 100px;
         position: absolute;
         left: 0;
         padding-left: 10%;
@@ -375,7 +377,7 @@
     }
 
     .welcome {
-        margin-top: 150px;
+        margin-top: 100px;
         position: absolute;
         left: 0;
         padding-left: 10%;
@@ -424,7 +426,7 @@
     }
 
     .welcome {
-        margin-top: 180px;
+        margin-top: 140px;
         position: absolute;
         left: 0;
         padding-left: 10%;

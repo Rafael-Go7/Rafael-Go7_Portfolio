@@ -4,9 +4,9 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-right: 10%;
-    margin-left: 10%;
-    width: 80%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
 
 }
 
@@ -62,7 +62,7 @@
 .Project{
     margin-bottom: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     // height: 400px;
     width: 100%;
     overflow-x: hidden;     // we apply this attribute always to the superior div. In this case we want to prevent AOS effects creating margins during responsive design resolutions. There is another "overflow-x:hidden" attribute in the styles.scss. Only if both files have the same attribute the AOS effects do not create margins during responsive Design resloutions. 
@@ -77,8 +77,9 @@
     }
 
     img {
-        height: 400px;
+        max-height: 400px;
         width: 600px;
+        max-width: 90%;
         margin-right: 5%;
         box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.1);
         transition: all 200ms ease-out;
@@ -129,7 +130,7 @@
         min-width: 86px;
         border: 2px solid #5988FF;
 
-        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+        // filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
         border-radius: 10px;
         
         font-family: 'Poppins';
@@ -266,7 +267,6 @@
         align-items: center;
 
         p{
-            // width: 100%;
             max-width: 50%;
         }
 
