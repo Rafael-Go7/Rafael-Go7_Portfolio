@@ -60,11 +60,12 @@
 }
 
 .Project{
-    margin-bottom: 80px;
     display: flex;
     justify-content: space-evenly;
     // height: 400px;
     width: 100%;
+    margin-bottom: 70px;
+    padding-bottom: 10px;
     overflow-x: hidden;     // we apply this attribute always to the superior div. In this case we want to prevent AOS effects creating margins during responsive design resolutions. There is another "overflow-x:hidden" attribute in the styles.scss. Only if both files have the same attribute the AOS effects do not create margins during responsive Design resloutions. 
 
     h3{

@@ -1,6 +1,5 @@
 header {
     height: 100px;
-    // min-width: 80vw;
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
@@ -181,7 +180,7 @@ header {
 }
 
 
-@media screen and (min-width: 747px) and (max-width: 1140px){
+@media screen and (min-width: 716px) and (max-width: 1140px){
     
     header {
         width: 87%;
@@ -191,21 +190,11 @@ header {
 }
 
 
-// @media screen and (min-width: 631px) and (max-width: 712px) {
-
-//     header{
-//         width: 90%;
-//         margin-right: 5%;
-//         margin-left: 5%;
-//     }
-// }
-
-
-@media screen and (min-width: 420px) and (max-width: 746px) {
+@media screen and (min-width: 420px) and (max-width: 715px) {
 
     header{
-        width: 80%;
-        margin-right: 15%;
+        width: 78%;
+        margin-right: 17%;
         margin-left: 5%;
         
         a{

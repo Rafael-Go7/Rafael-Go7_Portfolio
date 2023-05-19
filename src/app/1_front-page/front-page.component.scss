@@ -10,8 +10,7 @@
     z-index: 0;
 
     background-image: url("/assets/img/bubble_blue_big_front.svg");
-    // background-size: 50vw;
-    background-size: 70vh;
+    background-size: 50vw;
     background-repeat: no-repeat;
     background-position-x: 0px;
     background-position-y: top;
@@ -19,7 +18,8 @@
 }
 
 .welcome {
-    margin-top: 150px;
+    margin-top: 180px;
+    margin-right: -5%;
     display: flex;
     flex-direction: column;
 
@@ -43,7 +43,6 @@
         font-weight: 400;
         font-style: normal;
         font-size: 128px;
-        // font-size: clamp(48px, 7.5vw, 128px);
         line-height: 120%;
         color:#5988FF;
     }
@@ -52,14 +51,14 @@
 
 .welcomePhoto {
     position: relative;
-    margin-left: 8%;
+    margin-left: 3%;
     bottom: 0;
     z-index: 3;
 
     img {
         position: absolute;
-        bottom: 40%;
-        height: 30vh;
+        bottom: 30%;
+        width: 40vw;
         border: 1px solid black;
         border-radius: 5px;
     }
@@ -93,7 +92,7 @@
     justify-content: space-between;
     position: absolute;
     bottom: 0;
-    right: 10%;
+    right: 0;
 }
 
 .digitalLinks {
@@ -150,18 +149,15 @@
 @media screen and (min-width: 1519px) and (max-width: 1600px) {
 
     .welcome {
-
         h1{
             font-size: 112px;
             line-height: 100%;
         }
 
-
         p {
             font-size: 64px;
             line-height: 100%;
         }
-
     }
 
 }
@@ -197,13 +193,14 @@
 
     .frontBoxMajor{
         margin-right: 2%;
+        background-size: 55vw;
     }
 
     .welcome {
         padding-right: 2%;
+        margin-right: 0;
 
         h1{
-            // font-size: clamp(48px, 7.5vw, 128px);
             font-size: 96px;
             line-height: 100%;
         }
@@ -231,7 +228,6 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        // z-index: 3;
 
         h1{
             font-size: 100px;
@@ -249,13 +245,9 @@
         margin-left: 12%;
 
         img{
-            bottom: 23%;
+            bottom: 20%;
         }
     }
-
-    // .toolsBottom a:hover img{
-    //     filter: invert(54%) sepia(99%) saturate(674%) hue-rotate(165deg) brightness(92%) contrast(93%);
-    // }
 
     .rightBottomCorner {
         right: 2%;
@@ -278,7 +270,6 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        // z-index: 3;
 
         h1{
             font-size: 100px;
@@ -321,7 +312,7 @@
 }
 
 
-@media screen and (min-width: 821px) and (max-width: 1020px) {
+@media screen and (min-width: 870px) and (max-width: 1020px) {
     .frontBoxMajor{
         margin-right: 0;
         background-size:  95%;
@@ -332,7 +323,6 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        // z-index: 3;
 
         h1{
             font-size: 100px;
@@ -351,7 +341,8 @@
         margin-left: 12%;
 
         img{
-            bottom: 23%;
+            width: 60vw;
+            bottom: 15vh;
         }
     }
 
@@ -369,11 +360,59 @@
 }
 
 
-@media screen and (min-width: 726px) and (max-width: 833px) {
+@media screen and (min-width: 735px) and (max-width: 869px) {
     .frontBoxMajor{
         margin-right: 0;
-        background-size: 75vh;
-        
+        background-size: 105%; 
+    }
+
+    .welcome {
+        margin-top: 100px;
+        margin-right: 0;
+        position: absolute;
+        left: 0;
+        padding-left: 10%;
+
+        h1{
+            font-size: 100px;
+            color:White;
+        }
+
+        p {
+            font-size: 56px;
+            color: white;
+            word-break: keep-all;
+        }
+    }
+
+    .welcomePhoto {
+        margin-left: 12%;
+
+        img{
+            width: 65vw;
+            bottom: 18vh;
+
+        }
+    }
+
+    .scroll {
+       display: none;
+    }
+
+    .rightBottomCorner {
+        display: none;
+    }
+
+    .digitalLinks {
+       display: none;
+    }
+}
+
+
+@media screen and (min-width: 545px) and (max-width: 734px) {
+    .frontBoxMajor{
+        margin-right: 0;
+        background-size: 80vh;
     }
 
     .welcome {
@@ -381,17 +420,15 @@
         position: absolute;
         left: 0;
         padding-left: 10%;
-        // z-index: 3;
 
         h1{
-            font-size: 100px;
+            font-size: 86px;
             color:White;
         }
 
         p {
-            font-size: 56px;
+            font-size: clamp(24px, 7.5vw, 44px);
             color: white;
-            word-break: keep-all;
         }
     }
 
@@ -399,58 +436,9 @@
         margin-left: 12%;
 
         img{
-            bottom: 23%;
-
-        }
-    }
-
-    .scroll {
-       display: none;
-    }
-
-    .rightBottomCorner {
-        display: none;
-    }
-
-    .digitalLinks {
-       display: none;
-    }
-}
-
-
-@media screen and (min-width: 545px) and (max-width: 725px) {
-    .frontBoxMajor{
-        margin-right: 0;
-        background-size: 80vh;
-        // background-position-y: 75%;
-    }
-
-    .welcome {
-        margin-top: 140px;
-        position: absolute;
-        left: 0;
-        padding-left: 10%;
-        // z-index: 3;
-
-        h1{
-            font-size: 80px;
-            color:White;
-        }
-
-        p {
-            font-size: 44px;
-            color: white;
-            word-break: keep-all;
-        }
-    }
-
-    .welcomePhoto {
-        margin-left: 12%;
-
-        img{
-            top: 42%;
+            top: 40%;
             height: auto;
-            width: 75vw;
+            width: 70vw;
         }
     }
 
@@ -475,14 +463,13 @@
     }
 
     .welcome {
-        margin-top: 200px;
+        margin-top: 100px;
         position: absolute;
         left: 0;
         padding-left: 10%;
 
         h1{
             font-size: clamp(48px, 15.5vw, 128px);
-            // font-size: 60px;
             color:White;
         }
 
@@ -497,12 +484,11 @@
 
         img{
 
-            top: 45%;
+            top: 40%;
             height: auto;
             width: 80vw;
         }
     }
-
 
     .scroll {
        display: none;
@@ -536,7 +522,6 @@
         }
 
         p {
-            // font-size: 44px;
             font-size: clamp(24px, 7.5vw, 44px);
             color: white;
             word-break: keep-all;
