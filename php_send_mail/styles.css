@@ -7,7 +7,6 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
-    
 }
 
 header{
@@ -17,12 +16,16 @@ header{
 }
 
 .Message{
-    height: calc(100vh - 400px);
+    height: calc(100vh - 300px);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url('/src/assets/img/Digital\ network\ internet_CC00_large_1920x1293.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .Message a{
@@ -31,7 +34,18 @@ header{
 
 .Message a:hover{
     cursor: pointer;
-    text-shadow: 3px 3px 4px #777;
+    text-shadow: 2px 2px 4px #ffe62d;
+}
+
+.Message a:hover img{
+    height: 120px;
+    width: auto;
+}
+
+.Message a:hover h1{
+color: white;
+font-family: "Montserrat-bold";
+font-weight: bold;
 }
 
 .Message img{
@@ -41,12 +55,12 @@ header{
 }
 
 .Message h1{
-    font-family: "Baloo Bhai Regular";
+    font-family: "Montserrat";
     font-weight: 400;
     font-style: normal;
     font-size: clamp(24px, 7vw, 44px);
-    line-height: 100%;
-    color: #5988FF;
+    line-height: 120%;
+    color: white;
     margin: 0;
     margin-top: 40px;
 
@@ -57,7 +71,7 @@ header{
 
 
 footer{
-    height: 300px;
+    height: 200px;
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
