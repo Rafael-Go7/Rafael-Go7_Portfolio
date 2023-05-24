@@ -18,7 +18,7 @@
 }
 
 .welcome {
-    margin-top: 125px;
+    margin-top: 150px;
     margin-right: -5%;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
 
     img {
         position: absolute;
-        bottom: 30%;
+        bottom: 25%;
         width: 40vw;
         border: 1px solid black;
         border-radius: 5px;
@@ -146,9 +146,10 @@
 //    ----   Responsive Design   ----   //
 
 
-@media screen and (min-width: 1519px) and (max-width: 1600px) {
+@media screen and (min-width: 1601px) and (max-width: 1700px) {
 
     .welcome {
+        margin-top: 180px;
         h1{
             font-size: 112px;
             line-height: 100%;
@@ -157,6 +158,38 @@
         p {
             font-size: 64px;
             line-height: 100%;
+        }
+    }
+
+    .welcomePhoto {
+
+        img {
+            bottom: 30%;
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 1519px) and (max-width: 1600px) {
+
+    .welcome {
+        margin-top: 180px;
+        h1{
+            font-size: 112px;
+            line-height: 100%;
+        }
+
+        p {
+            font-size: 64px;
+            line-height: 100%;
+        }
+    }
+
+    .welcomePhoto {
+
+        img {
+            bottom: 32%;
         }
     }
 
@@ -170,6 +203,7 @@
     }
 
     .welcome {
+        margin-top: 180px;
         padding-right: 5%;
 
         h1{
@@ -180,6 +214,13 @@
         p {
             font-size: 64px;
             line-height: 100%;
+        }
+    }
+
+    .welcomePhoto {
+
+        img {
+            bottom: 30%;
         }
     }
 
@@ -197,6 +238,7 @@
     }
 
     .welcome {
+        margin-top: 180px;
         padding-right: 2%;
         margin-right: 0;
 
@@ -208,6 +250,13 @@
         p {
             font-size: 56px;
             line-height: 100%;
+        }
+    }
+
+    .welcomePhoto {
+
+        img {
+            bottom: 33%;
         }
     }
 
