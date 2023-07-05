@@ -22,8 +22,8 @@ export class SkillsSetComponent implements OnInit{
                 'skillDescription':'Scrum'
               }];
 
-  skills_row2 = [{'img':'logo_6_Firebase_white.svg',
-              'skillDescription':'Firebase'
+  skills_row2 = [{'img':'logo_6_Bootstrap_fill_modWhite_svgrepo_com.svg',
+              'skillDescription':'Bootstrap'
             },
               {'img':'logo_7_git_white.svg',
                 'skillDescription':'Git'
